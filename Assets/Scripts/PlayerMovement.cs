@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private Rigidbody2D rb;
-    private BoxCollider2D coll;
-    private SpriteRenderer spriteRenderer;
-    private Animator animator;
+    [SerializeField] private Rigidbody2D rb;
+    [SerializeField] private BoxCollider2D coll;
+    [SerializeField] private SpriteRenderer spriteRenderer;
+    [SerializeField] private Animator animator;
 
     private float horizontalMove = 0f;
     private bool jump = false;
@@ -16,15 +16,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask terrain;
 
     private enum MovementState { idle, running, jumping, falling }
-
-    // Start is called before the first frame update
-    private void Start()
-    {
-        rb = GetComponent<Rigidbody2D>();
-        coll = GetComponent<BoxCollider2D>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
-        animator = GetComponent<Animator>();
-    }
 
     // Update is called once per frame
     private void Update()
