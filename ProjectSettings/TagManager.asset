@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Banana
   - Trap
+  - Platform
   layers:
   - Default
   - TransparentFX
