@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private BoxCollider2D coll;
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private Animator animator;
+    [SerializeField] private AudioSource jumpSound;
 
     private float horizontalMove = 0f;
     private bool jump = false;
@@ -33,6 +34,7 @@ public class PlayerMovement : MonoBehaviour
         rb.velocity = new Vector2(horizontalMove * moveSpeed, rb.velocity.y);
         if (jump)
         {
+            jumpSound.Play();
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             jump = false;
         }

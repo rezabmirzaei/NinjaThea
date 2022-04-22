@@ -6,6 +6,8 @@ public class PlayerLife : MonoBehaviour
 
     [SerializeField] private Animator animator;
     [SerializeField] private Rigidbody2D rb;
+    [SerializeField] private AudioSource deathSound;
+
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -17,6 +19,7 @@ public class PlayerLife : MonoBehaviour
 
     private void Die()
     {
+        deathSound.Play();
         animator.SetTrigger("Death");
         rb.bodyType = RigidbodyType2D.Static;
     }
