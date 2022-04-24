@@ -12,7 +12,8 @@ public class ItemCollector : MonoBehaviour
         if (collision.gameObject.CompareTag("Banana"))
         {
             itemCollectedSound.Play();
-            Destroy(collision.gameObject);
+            collision.gameObject.GetComponent<Animator>().SetTrigger("ItemCollected");
+            // Item is destroyed by animator transition triggred by ItemCollected (OnStateExit)
         }
     }
 
