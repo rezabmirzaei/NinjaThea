@@ -4,9 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Banana
   - Trap
   - Platform
+  - Finishline
+  - Collectible
   layers:
   - Default
   - TransparentFX

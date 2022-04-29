@@ -9,7 +9,7 @@ public class ItemCollector : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Banana"))
+        if (collision.gameObject.CompareTag("Collectible"))
         {
             itemCollectedSound.Play();
             collision.gameObject.GetComponent<Animator>().SetTrigger("ItemCollected");
