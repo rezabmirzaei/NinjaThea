@@ -12,7 +12,7 @@ public class GameController : MonoBehaviour
 
     private int numTotalItems;
     private string itemName;
-    private int numItemsCollected = 0;
+    private int numItemsCollected;
 
     private void Awake()
     {
@@ -23,6 +23,7 @@ public class GameController : MonoBehaviour
     {
         itemName = itemsContainer.transform.name;
         numTotalItems = itemsContainer.transform.childCount;
+        numItemsCollected = 0;
         itemText.text = $"{itemName} : {numItemsCollected}/{numTotalItems}";
     }
 
