@@ -13,9 +13,16 @@ public class FinishLine : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Player") && !levelCompleted)
         {
-            levelCompleted = true;
-            finishLineCrossedSound.Play();
-            Invoke("LoadNextScene", 2f);
+            if (GameController.Instance.TasksCompleted())
+            {
+                levelCompleted = true;
+                finishLineCrossedSound.Play();
+                Invoke("LoadNextScene", 2f);
+            }
+            else
+            {
+                Debug.Log("Complete all tasks first!");
+            }
         }
     }
 

@@ -32,4 +32,9 @@ public class GameController : MonoBehaviour
         itemText.text = $"{itemName} : {numItemsCollected}/{numTotalItems}";
     }
 
+    public bool TasksCompleted()
+    {
+        return numItemsCollected >= numTotalItems;
+    }
+
 }
