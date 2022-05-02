@@ -5,6 +5,7 @@ public class GameController : MonoBehaviour
 {
 
     public static GameController Instance;
+    public bool tasksCompleted;
 
     [SerializeField] private GameObject itemsContainer;
     [SerializeField] private GameObject hudContainer;
@@ -25,17 +26,19 @@ public class GameController : MonoBehaviour
         numTotalItems = itemsContainer.transform.childCount;
         numItemsCollected = 0;
         itemText.text = $"{itemName} : {numItemsCollected}/{numTotalItems}";
+        tasksCompleted = false;
     }
 
     public void ItemCollected()
     {
         numItemsCollected++;
         itemText.text = $"{itemName} : {numItemsCollected}/{numTotalItems}";
+        CheckTasksCompleted();
     }
 
-    public bool TasksCompleted()
+    private void CheckTasksCompleted()
     {
-        return numItemsCollected >= numTotalItems;
+        tasksCompleted = numItemsCollected >= numTotalItems;
     }
 
 }
