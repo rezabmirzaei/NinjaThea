@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using System;
 
 public class GameController : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class GameController : MonoBehaviour
     [SerializeField] private GameObject itemsContainer;
     [SerializeField] private GameObject hudContainer;
     [SerializeField] private TextMeshProUGUI itemText;
+    [SerializeField] private TextMeshProUGUI timeText;
     [SerializeField] private TextMeshProUGUI tasksNotCompleteWarningText;
 
     private int numTotalItems;
@@ -18,6 +20,9 @@ public class GameController : MonoBehaviour
     private int numItemsCollected;
     private float timeToAppear = 3f;
     private float timeWhenDisappear;
+    private float startTime;
+    private float elapsedTime;
+    private TimeSpan timePlaying;
 
     private void Awake()
     {
@@ -29,17 +34,33 @@ public class GameController : MonoBehaviour
         itemName = itemsContainer.transform.name;
         numTotalItems = itemsContainer.transform.childCount;
         numItemsCollected = 0;
-        itemText.text = $"{itemName} : {numItemsCollected}/{numTotalItems}";
+        itemText.text = $"{itemName}: {numItemsCollected}/{numTotalItems}";
+        timeText.text = "Time: 00:00.00";
         tasksCompleted = false;
-        gamePlaying = true;
+        gamePlaying = false;
+
+        BeginGame();
     }
 
     private void Update()
     {
-        if (tasksNotCompleteWarningText.enabled && (Time.time >= timeWhenDisappear))
+        if (gamePlaying)
         {
-            tasksNotCompleteWarningText.gameObject.SetActive(false);
+            elapsedTime = Time.time - startTime;
+            timePlaying = TimeSpan.FromSeconds(elapsedTime);
+            timeText.text = "Time: " + timePlaying.ToString("mm':'ss'.'ff");
+            // TODO Refactor
+            if (tasksNotCompleteWarningText.enabled && (Time.time >= timeWhenDisappear))
+            {
+                tasksNotCompleteWarningText.gameObject.SetActive(false);
+            }
         }
+    }
+
+    private void BeginGame()
+    {
+        gamePlaying = true;
+        startTime = Time.time;
     }
 
     public void DisplayTasksNotCompleteWarningText()
@@ -51,7 +72,7 @@ public class GameController : MonoBehaviour
     public void ItemCollected()
     {
         numItemsCollected++;
-        itemText.text = $"{itemName} : {numItemsCollected}/{numTotalItems}";
+        itemText.text = $"{itemName}: {numItemsCollected}/{numTotalItems}";
         CheckTasksCompleted();
     }
 
