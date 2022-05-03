@@ -12,7 +12,7 @@ public class ItemCollector : MonoBehaviour
         if (collision.gameObject.CompareTag("Collectible"))
         {
             itemCollectedSound.Play();
-            GameController.Instance.ItemCollected();
+            GameController.instance.ItemCollected();
             collision.gameObject.GetComponent<Animator>().SetTrigger("ItemCollected");
             // Item is destroyed by animator transition triggred by ItemCollected (OnStateExit)
         }

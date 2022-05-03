@@ -4,20 +4,18 @@ public class FinishLine : MonoBehaviour
 {
 
     [SerializeField] private AudioSource finishLineCrossedSound;
-    [SerializeField] private GameObject levelCompleteContainer;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
-        if (collision.gameObject.CompareTag("Player") && GameController.Instance.tasksCompleted)
+        if (collision.gameObject.CompareTag("Player") && GameController.instance.tasksCompleted)
         {
             finishLineCrossedSound.Play();
-            levelCompleteContainer.SetActive(true);
-            GameController.Instance.gamePlaying = false;
+            GameController.instance.LevelComplete();
         }
         else
         {
-            GameController.Instance.DisplayTasksNotCompleteWarningText();
+            GameController.instance.DisplayTasksNotCompleteWarningText();
         }
 
     }

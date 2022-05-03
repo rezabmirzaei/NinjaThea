@@ -5,14 +5,16 @@ using System;
 public class GameController : MonoBehaviour
 {
 
-    public static GameController Instance;
+    public static GameController instance;
     public bool tasksCompleted;
     public bool gamePlaying;
 
     [SerializeField] private GameObject itemsContainer;
     [SerializeField] private GameObject hudContainer;
+    [SerializeField] private GameObject levelCompleteContainer;
     [SerializeField] private TextMeshProUGUI itemText;
     [SerializeField] private TextMeshProUGUI timeText;
+    [SerializeField] private TextMeshProUGUI levelCompleteTimeText;
     [SerializeField] private TextMeshProUGUI tasksNotCompleteWarningText;
 
     private int numTotalItems;
@@ -26,7 +28,12 @@ public class GameController : MonoBehaviour
 
     private void Awake()
     {
-        Instance = this;
+        if (instance != null && instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        instance = this;
     }
 
     private void Start()
@@ -79,6 +86,13 @@ public class GameController : MonoBehaviour
     private void CheckTasksCompleted()
     {
         tasksCompleted = numItemsCollected >= numTotalItems;
+    }
+
+    public void LevelComplete()
+    {
+        levelCompleteContainer.SetActive(true);
+        gamePlaying = false;
+        levelCompleteTimeText.text = "Time: " + timePlaying.ToString("mm':'ss'.'ff");
     }
 
 }
