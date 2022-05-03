@@ -13,10 +13,11 @@ public class FinishLine : MonoBehaviour
         {
             finishLineCrossedSound.Play();
             levelCompleteContainer.SetActive(true);
+            GameController.Instance.gamePlaying = false;
         }
         else
         {
-            Debug.Log("Complete all tasks first!");
+            GameController.Instance.DisplayTasksNotCompleteWarningText();
         }
 
     }

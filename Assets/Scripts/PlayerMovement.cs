@@ -19,11 +19,19 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        horizontalMove = Input.GetAxisRaw("Horizontal");
-
-        if (Input.GetButtonDown("Jump") && isGrounded())
+        if (GameController.Instance.gamePlaying)
         {
-            jump = true;
+            horizontalMove = Input.GetAxisRaw("Horizontal");
+
+            if (Input.GetButtonDown("Jump") && isGrounded())
+            {
+                jump = true;
+            }
+        }
+        else
+        {
+            horizontalMove = 0;
+            jump = false;
         }
 
         UpdateAnimationState();
