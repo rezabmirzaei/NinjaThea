@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using System;
+using System.Collections;
 
 public class GameController : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class GameController : MonoBehaviour
     [SerializeField] private GameObject levelCompleteContainer;
     [SerializeField] private TextMeshProUGUI itemText;
     [SerializeField] private TextMeshProUGUI timeText;
+    [SerializeField] private TextMeshProUGUI countdownText;
+    [SerializeField] private string[] countdownSteps;
     [SerializeField] private TextMeshProUGUI levelCompleteTimeText;
     [SerializeField] private TextMeshProUGUI tasksNotCompleteWarningText;
 
@@ -46,7 +49,7 @@ public class GameController : MonoBehaviour
         tasksCompleted = false;
         gamePlaying = false;
 
-        BeginGame();
+        StartCoroutine(CountdownToBeginGame());
     }
 
     private void Update()
@@ -62,6 +65,22 @@ public class GameController : MonoBehaviour
                 tasksNotCompleteWarningText.gameObject.SetActive(false);
             }
         }
+    }
+
+    IEnumerator CountdownToBeginGame()
+    {
+
+        foreach (string step in countdownSteps)
+        {
+            countdownText.text = step;
+            yield return new WaitForSeconds(1f);
+        }
+
+        BeginGame();
+
+        yield return new WaitForSeconds(.5f);
+        countdownText.gameObject.SetActive(false);
+
     }
 
     private void BeginGame()
