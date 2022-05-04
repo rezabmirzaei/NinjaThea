@@ -8,14 +8,14 @@ public class FinishLine : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
-        if (collision.gameObject.CompareTag("Player") && GameController.instance.tasksCompleted)
+        if (collision.gameObject.CompareTag("Player") && GameController.Instance.tasksCompleted)
         {
             finishLineCrossedSound.Play();
-            GameController.instance.LevelComplete();
+            GameController.Instance.LevelComplete();
         }
         else
         {
-            GameController.instance.DisplayTasksNotCompleteWarningText();
+            GameController.Instance.DisplayTasksNotCompleteWarningText();
         }
 
     }

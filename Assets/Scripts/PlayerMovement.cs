@@ -19,7 +19,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if (GameController.instance.gamePlaying)
+        if (GameController.Instance.gamePlaying)
         {
             horizontalMove = Input.GetAxisRaw("Horizontal");
 

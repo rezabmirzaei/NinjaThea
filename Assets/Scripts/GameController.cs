@@ -6,10 +6,12 @@ using System.Collections;
 public class GameController : MonoBehaviour
 {
 
-    public static GameController instance;
+    public static GameController Instance;
     public bool tasksCompleted;
     public bool gamePlaying;
 
+    // TODO Handle music better in AudioManager
+    [SerializeField] private AudioSource backgroundMusic;
     [SerializeField] private GameObject itemsContainer;
     [SerializeField] private GameObject hudContainer;
     [SerializeField] private GameObject levelCompleteContainer;
@@ -17,6 +19,8 @@ public class GameController : MonoBehaviour
     [SerializeField] private TextMeshProUGUI timeText;
     [SerializeField] private TextMeshProUGUI countdownText;
     [SerializeField] private string[] countdownSteps;
+    // TODO Rethink this. Doen Unity handle tuples? > E.g. use together with countdownSteps, each step has own audio.
+    [SerializeField] private AudioSource countdownStepsAudio;
     [SerializeField] private TextMeshProUGUI levelCompleteTimeText;
     [SerializeField] private TextMeshProUGUI tasksNotCompleteWarningText;
 
@@ -31,12 +35,12 @@ public class GameController : MonoBehaviour
 
     private void Awake()
     {
-        if (instance != null && instance != this)
+        if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
             return;
         }
-        instance = this;
+        Instance = this;
     }
 
     private void Start()
@@ -46,6 +50,7 @@ public class GameController : MonoBehaviour
         numItemsCollected = 0;
         itemText.text = $"{itemName}: {numItemsCollected}/{numTotalItems}";
         timeText.text = "Time: 00:00.00";
+        countdownText.text = "";
         tasksCompleted = false;
         gamePlaying = false;
 
@@ -70,9 +75,16 @@ public class GameController : MonoBehaviour
     IEnumerator CountdownToBeginGame()
     {
 
+        int iterations = 0;
         foreach (string step in countdownSteps)
         {
+            iterations++;
+            if (iterations == countdownSteps.Length)
+            {
+                countdownText.fontSize = 168;
+            }
             countdownText.text = step;
+            countdownStepsAudio.Play();
             yield return new WaitForSeconds(1f);
         }
 
@@ -87,6 +99,8 @@ public class GameController : MonoBehaviour
     {
         gamePlaying = true;
         startTime = Time.time;
+        // TODO Handle better in AudioManager
+        backgroundMusic.gameObject.SetActive(true);
     }
 
     public void DisplayTasksNotCompleteWarningText()
@@ -110,6 +124,8 @@ public class GameController : MonoBehaviour
     public void LevelComplete()
     {
         levelCompleteContainer.SetActive(true);
+        // TODO Handle better in AudioManager
+        backgroundMusic.gameObject.SetActive(false);
         gamePlaying = false;
         levelCompleteTimeText.text = "Time: " + timePlaying.ToString("mm':'ss'.'ff");
     }
