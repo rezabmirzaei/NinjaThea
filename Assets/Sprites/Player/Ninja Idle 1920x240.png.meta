@@ -1,25 +1,7 @@
 fileFormatVersion: 2
-guid: db4c48855ed20ec4a92a84e2b8a664ad
+guid: a35669ac1e51c6c46925c96dac09b4a0
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -4801923697170587870
-    second: Collected_0
-  - first:
-      213: -8008818501793099674
-    second: Collected_1
-  - first:
-      213: -5647853031727683852
-    second: Collected_2
-  - first:
-      213: 6868876828740441722
-    second: Collected_3
-  - first:
-      213: -3443555461527096104
-    second: Collected_4
-  - first:
-      213: 2831489644526101201
-    second: Collected_5
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -51,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -65,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -80,7 +62,7 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 1
+  applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -99,7 +81,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -111,7 +93,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -122,13 +104,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Collected_0
+      name: Ninja Idle 1920x240_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 32
-        height: 32
+        x: 152
+        y: 56
+        width: 152
+        height: 152
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -136,20 +118,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b980ab8f44c734c448b9a856148e3a5b
-      internalID: -4801923697170587870
+      spriteID: 59eed9fb77fd14246bd049f354bb951d
+      internalID: 1424820221
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Collected_1
+      name: Ninja Idle 1920x240_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
+        x: 632
+        y: 56
+        width: 152
+        height: 152
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,20 +139,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 000eff999f38b4347948598b2e102cbe
-      internalID: -8008818501793099674
+      spriteID: 2aa23fdec7aeb25459ace7835bedbe0e
+      internalID: 56335466
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Collected_2
+      name: Ninja Idle 1920x240_2
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 32
+        x: 1112
+        y: 56
+        width: 152
+        height: 152
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +160,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a40985225743947488dbe56ef7075479
-      internalID: -5647853031727683852
+      spriteID: 8533219b031d6304980d91c2f3201370
+      internalID: 801695250
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Collected_3
+      name: Ninja Idle 1920x240_3
       rect:
         serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
+        x: 1592
+        y: 56
+        width: 152
+        height: 152
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,50 +181,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59bfd23870a0f194e8fc585b1c544243
-      internalID: 6868876828740441722
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Collected_4
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 85c3ac564a700ed4e896043be4ab63d9
-      internalID: -3443555461527096104
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Collected_5
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0dd54906e5c0da841bc10f831037af33
-      internalID: 2831489644526101201
+      spriteID: 04651e937f6d00041b1e30c7816c1ca0
+      internalID: 654835242
       vertices: []
       indices: 
       edges: []
@@ -258,12 +198,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Collected_4: -3443555461527096104
-      Collected_1: -8008818501793099674
-      Collected_5: 2831489644526101201
-      Collected_0: -4801923697170587870
-      Collected_3: 6868876828740441722
-      Collected_2: -5647853031727683852
+      Ninja Idle 1920x240_2: 801695250
+      Ninja Idle 1920x240_0: 1424820221
+      Ninja Idle 1920x240_3: 654835242
+      Ninja Idle 1920x240_1: 56335466
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -1,25 +1,7 @@
 fileFormatVersion: 2
-guid: db4c48855ed20ec4a92a84e2b8a664ad
+guid: 38ba2b162ad609547b024414e99b3845
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -4801923697170587870
-    second: Collected_0
-  - first:
-      213: -8008818501793099674
-    second: Collected_1
-  - first:
-      213: -5647853031727683852
-    second: Collected_2
-  - first:
-      213: 6868876828740441722
-    second: Collected_3
-  - first:
-      213: -3443555461527096104
-    second: Collected_4
-  - first:
-      213: 2831489644526101201
-    second: Collected_5
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -51,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -65,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -80,7 +62,7 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 1
+  applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -99,7 +81,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -111,7 +93,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -122,13 +104,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Collected_0
+      name: Ninja Run 1920x480_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 32
-        height: 32
+        x: 152
+        y: 296
+        width: 152
+        height: 144
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -136,20 +118,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b980ab8f44c734c448b9a856148e3a5b
-      internalID: -4801923697170587870
+      spriteID: cd94f2c117580524fad463bdcff61ce5
+      internalID: 2043314530
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Collected_1
+      name: Ninja Run 1920x480_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
+        x: 632
+        y: 296
+        width: 168
+        height: 136
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,20 +139,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 000eff999f38b4347948598b2e102cbe
-      internalID: -8008818501793099674
+      spriteID: ab247e1091914124599273c4b5534352
+      internalID: 882854761
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Collected_2
+      name: Ninja Run 1920x480_2
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 32
+        x: 1112
+        y: 296
+        width: 168
+        height: 144
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +160,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a40985225743947488dbe56ef7075479
-      internalID: -5647853031727683852
+      spriteID: b6cb33ec360a9d6429ca370312a771d0
+      internalID: -333032425
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Collected_3
+      name: Ninja Run 1920x480_3
       rect:
         serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
+        x: 1592
+        y: 304
+        width: 176
+        height: 144
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,20 +181,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59bfd23870a0f194e8fc585b1c544243
-      internalID: 6868876828740441722
+      spriteID: f22a73a967fe3f446bade738e0a2627e
+      internalID: -1322250507
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Collected_4
+      name: Ninja Run 1920x480_4
       rect:
         serializedVersion: 2
-        x: 128
-        y: 0
-        width: 32
-        height: 32
+        x: 152
+        y: 56
+        width: 168
+        height: 144
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -220,20 +202,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85c3ac564a700ed4e896043be4ab63d9
-      internalID: -3443555461527096104
+      spriteID: 2c95809b54c5e74428daeb2782ccaffe
+      internalID: -1149138827
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Collected_5
+      name: Ninja Run 1920x480_5
       rect:
         serializedVersion: 2
-        x: 160
-        y: 0
-        width: 32
-        height: 32
+        x: 632
+        y: 56
+        width: 168
+        height: 144
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -241,8 +223,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0dd54906e5c0da841bc10f831037af33
-      internalID: 2831489644526101201
+      spriteID: 9c797cdfff8824843a26d1772d3964dd
+      internalID: -739719233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja Run 1920x480_6
+      rect:
+        serializedVersion: 2
+        x: 1112
+        y: 64
+        width: 152
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d28325825c17c64b9df2cc563a83548
+      internalID: 1544075270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja Run 1920x480_7
+      rect:
+        serializedVersion: 2
+        x: 1592
+        y: 64
+        width: 144
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba0a362c7ef65d14784d5a45f3c23d2b
+      internalID: 1873539932
       vertices: []
       indices: 
       edges: []
@@ -258,12 +282,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Collected_4: -3443555461527096104
-      Collected_1: -8008818501793099674
-      Collected_5: 2831489644526101201
-      Collected_0: -4801923697170587870
-      Collected_3: 6868876828740441722
-      Collected_2: -5647853031727683852
+      Ninja Run 1920x480_6: 1544075270
+      Ninja Run 1920x480_3: -1322250507
+      Ninja Run 1920x480_7: 1873539932
+      Ninja Run 1920x480_2: -333032425
+      Ninja Run 1920x480_1: 882854761
+      Ninja Run 1920x480_5: -739719233
+      Ninja Run 1920x480_4: -1149138827
+      Ninja Run 1920x480_0: 2043314530
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

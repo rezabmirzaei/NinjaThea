@@ -8,6 +8,7 @@ TagManager:
   - Platform
   - Finishline
   - Collectible
+  - UI
   layers:
   - Default
   - TransparentFX
