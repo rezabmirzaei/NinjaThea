@@ -9,6 +9,7 @@ TagManager:
   - Finishline
   - Collectible
   - UI
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -19,7 +20,7 @@ TagManager:
   - Terrain
   - Item
   - Traps
-  - 
+  - Enemy
   - 
   - 
   - 

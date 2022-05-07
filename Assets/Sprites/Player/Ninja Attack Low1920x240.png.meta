@@ -1,28 +1,7 @@
 fileFormatVersion: 2
-guid: 9b0499fd3a0892046926ed19c78cfea3
+guid: 5e954b59875d3924db48a9e9ad0437b7
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 6868122594974341346
-    second: Hit (32x32)_0
-  - first:
-      213: 7167584040609486739
-    second: Hit (32x32)_1
-  - first:
-      213: -1675461080110260169
-    second: Hit (32x32)_2
-  - first:
-      213: 8480664182131228983
-    second: Hit (32x32)_3
-  - first:
-      213: -953560442851353963
-    second: Hit (32x32)_4
-  - first:
-      213: -3450976776972242761
-    second: Hit (32x32)_5
-  - first:
-      213: 7062579536633761780
-    second: Hit (32x32)_6
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -54,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -68,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -83,7 +62,7 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 1
+  applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -102,7 +81,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -114,7 +93,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -125,13 +104,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Hit (32x32)_0
+      name: Ninja Attack Low1920x240_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 32
-        height: 32
+        x: 176
+        y: 56
+        width: 112
+        height: 144
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,20 +118,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c97e2002a1af9b4c850b1c40a07ba34
-      internalID: 6868122594974341346
+      spriteID: eacb42183b2c40448b22d19b4f1a7f48
+      internalID: 932629041
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hit (32x32)_1
+      name: Ninja Attack Low1920x240_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
+        x: 576
+        y: 56
+        width: 264
+        height: 144
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,20 +139,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61ac590503a4b944a8f51e333e65ac76
-      internalID: 7167584040609486739
+      spriteID: ee56d59fc7af44e4d8bf1567a772d780
+      internalID: 1222425305
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hit (32x32)_2
+      name: Ninja Attack Low1920x240_2
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 32
+        x: 1032
+        y: 56
+        width: 200
+        height: 152
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +160,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 523cd66b5dcaaba438ab6288680ab156
-      internalID: -1675461080110260169
+      spriteID: 3e355ba397d14134689d87e70da8410e
+      internalID: -1411461712
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hit (32x32)_3
+      name: Ninja Attack Low1920x240_3
       rect:
         serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
+        x: 1512
+        y: 56
+        width: 200
+        height: 152
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,71 +181,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ffa431ee42dc2b4d8c40ce836ef4b6a
-      internalID: 8480664182131228983
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hit (32x32)_4
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0b34c45b0653cb84f88ad2c595ef604c
-      internalID: -953560442851353963
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hit (32x32)_5
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d3e3bfe67aa890c429e6be296ab03094
-      internalID: -3450976776972242761
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hit (32x32)_6
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ad0aad21861d378499965c694f12301f
-      internalID: 7062579536633761780
+      spriteID: 85b181d8dd4614a48943ce1c71510731
+      internalID: -1150078798
       vertices: []
       indices: 
       edges: []
@@ -282,13 +198,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Hit (32x32)_4: -953560442851353963
-      Hit (32x32)_5: -3450976776972242761
-      Hit (32x32)_2: -1675461080110260169
-      Hit (32x32)_3: 8480664182131228983
-      Hit (32x32)_6: 7062579536633761780
-      Hit (32x32)_1: 7167584040609486739
-      Hit (32x32)_0: 6868122594974341346
+      Ninja Attack Low1920x240_1: 1222425305
+      Ninja Attack Low1920x240_2: -1411461712
+      Ninja Attack Low1920x240_3: -1150078798
+      Ninja Attack Low1920x240_0: 932629041
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

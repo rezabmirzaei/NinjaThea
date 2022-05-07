@@ -1,25 +1,7 @@
 fileFormatVersion: 2
-guid: 5fd9f3ec1e3e0bc4d8e308e10012a36a
+guid: 22f775c3283b2a94b922cace771487d1
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -9101230857065804138
-    second: Double Jump (32x32)_0
-  - first:
-      213: -6204479477933590408
-    second: Double Jump (32x32)_1
-  - first:
-      213: 7040038629683462113
-    second: Double Jump (32x32)_2
-  - first:
-      213: 781615245368611544
-    second: Double Jump (32x32)_3
-  - first:
-      213: -3939753913355333839
-    second: Double Jump (32x32)_4
-  - first:
-      213: 6301718139250434432
-    second: Double Jump (32x32)_5
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -51,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -65,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -80,7 +62,7 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 1
+  applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -99,7 +81,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -111,7 +93,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -122,13 +104,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Double Jump (32x32)_0
+      name: Mouse Idle 1024x256_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 32
-        height: 32
+        x: 56
+        y: 56
+        width: 128
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -136,20 +118,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc26ef155fcd716479d3d641d4bf610e
-      internalID: -9101230857065804138
+      spriteID: 1f96a0f888804084fa95a948ef84b32a
+      internalID: 1406512888
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Double Jump (32x32)_1
+      name: Mouse Idle 1024x256_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
+        x: 312
+        y: 56
+        width: 128
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,20 +139,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63270021216da4a488905ef860348008
-      internalID: -6204479477933590408
+      spriteID: 183ee37f63fc279409d8d272ce71c78b
+      internalID: -2030155953
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Double Jump (32x32)_2
+      name: Mouse Idle 1024x256_2
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 32
+        x: 568
+        y: 56
+        width: 128
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +160,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67f09dbbeaf6da945af5b6db94d6011a
-      internalID: 7040038629683462113
+      spriteID: 39cabac23124aac41902bc2e354d2f35
+      internalID: 1242705298
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Double Jump (32x32)_3
+      name: Mouse Idle 1024x256_3
       rect:
         serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
+        x: 824
+        y: 56
+        width: 128
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,50 +181,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e6dde468ba0a8648b2aea51d2cf6d74
-      internalID: 781615245368611544
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Double Jump (32x32)_4
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fe00bc1ac1825f347b51764de015d3b8
-      internalID: -3939753913355333839
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Double Jump (32x32)_5
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dc912b65259bb044da9cb45c1f15f74f
-      internalID: 6301718139250434432
+      spriteID: e0b25c74c2910b84fb8c0c167939b6ea
+      internalID: -685154402
       vertices: []
       indices: 
       edges: []
@@ -258,12 +198,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Double Jump (32x32)_1: -6204479477933590408
-      Double Jump (32x32)_5: 6301718139250434432
-      Double Jump (32x32)_0: -9101230857065804138
-      Double Jump (32x32)_3: 781615245368611544
-      Double Jump (32x32)_4: -3939753913355333839
-      Double Jump (32x32)_2: 7040038629683462113
+      Mouse Idle 1024x256_1: -2030155953
+      Mouse Idle 1024x256_0: 1406512888
+      Mouse Idle 1024x256_3: -685154402
+      Mouse Idle 1024x256_2: 1242705298
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
