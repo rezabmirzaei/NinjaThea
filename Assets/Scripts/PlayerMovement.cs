@@ -16,7 +16,6 @@ public class PlayerMovement : MonoBehaviour
 
     private enum MovementState { idle, running, jumping, falling }
 
-    // Update is called once per frame
     private void Update()
     {
         if (GameController.Instance.gamePlaying)

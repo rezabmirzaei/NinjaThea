@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Ninja Attack
+  m_Name: Ninja Attack Top
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,13 +20,13 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 932629041, guid: 5e954b59875d3924db48a9e9ad0437b7, type: 3}
+      value: {fileID: 89978013, guid: 3cc3e7609af61664babe6b40b748c6d5, type: 3}
     - time: 0.083333336
-      value: {fileID: 1222425305, guid: 5e954b59875d3924db48a9e9ad0437b7, type: 3}
+      value: {fileID: 1809243544, guid: 3cc3e7609af61664babe6b40b748c6d5, type: 3}
     - time: 0.16666667
-      value: {fileID: -1411461712, guid: 5e954b59875d3924db48a9e9ad0437b7, type: 3}
+      value: {fileID: -327259214, guid: 3cc3e7609af61664babe6b40b748c6d5, type: 3}
     - time: 0.25
-      value: {fileID: -1150078798, guid: 5e954b59875d3924db48a9e9ad0437b7, type: 3}
+      value: {fileID: 875270289, guid: 3cc3e7609af61664babe6b40b748c6d5, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -46,10 +46,10 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 932629041, guid: 5e954b59875d3924db48a9e9ad0437b7, type: 3}
-    - {fileID: 1222425305, guid: 5e954b59875d3924db48a9e9ad0437b7, type: 3}
-    - {fileID: -1411461712, guid: 5e954b59875d3924db48a9e9ad0437b7, type: 3}
-    - {fileID: -1150078798, guid: 5e954b59875d3924db48a9e9ad0437b7, type: 3}
+    - {fileID: 89978013, guid: 3cc3e7609af61664babe6b40b748c6d5, type: 3}
+    - {fileID: 1809243544, guid: 3cc3e7609af61664babe6b40b748c6d5, type: 3}
+    - {fileID: -327259214, guid: 3cc3e7609af61664babe6b40b748c6d5, type: 3}
+    - {fileID: 875270289, guid: 3cc3e7609af61664babe6b40b748c6d5, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
