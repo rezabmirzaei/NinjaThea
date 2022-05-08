@@ -34,7 +34,7 @@ public class PlayerAttack : MonoBehaviour
 
         foreach (Collider2D enemy in hitEnemies)
         {
-            Debug.Log(enemy.name);
+            enemy.GetComponent<Enemy>().Die();
         }
     }
 
