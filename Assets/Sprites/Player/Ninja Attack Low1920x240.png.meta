@@ -107,12 +107,12 @@ TextureImporter:
       name: Ninja Attack Low1920x240_0
       rect:
         serializedVersion: 2
-        x: 176
+        x: 108
         y: 56
-        width: 112
-        height: 144
+        width: 264
+        height: 152
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -129,11 +129,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 576
-        y: 56
+        y: 57
         width: 264
-        height: 144
+        height: 152
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -151,10 +151,10 @@ TextureImporter:
         serializedVersion: 2
         x: 1032
         y: 56
-        width: 200
+        width: 264
         height: 152
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -172,10 +172,10 @@ TextureImporter:
         serializedVersion: 2
         x: 1512
         y: 56
-        width: 200
+        width: 264
         height: 152
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -183,6 +183,27 @@ TextureImporter:
       bones: []
       spriteID: 85b181d8dd4614a48943ce1c71510731
       internalID: -1150078798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja Attack Low1920x240_4
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 56
+        width: 264
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bb39c4bfdb1a9b4a8d1745c8ddc78bd
+      internalID: 496630599
       vertices: []
       indices: 
       edges: []
@@ -198,6 +219,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Ninja Attack Low1920x240_4: 496630599
       Ninja Attack Low1920x240_1: 1222425305
       Ninja Attack Low1920x240_2: -1411461712
       Ninja Attack Low1920x240_3: -1150078798
