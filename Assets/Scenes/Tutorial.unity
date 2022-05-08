@@ -3900,14 +3900,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 238232858}
     m_Modifications:
-    - target: {fileID: 188096149430391949, guid: 5913e209274046d48887cd3e04716c60, type: 3}
-      propertyPath: coll
-      value: 
-      objectReference: {fileID: 188096149430391950}
-    - target: {fileID: 188096149430391949, guid: 5913e209274046d48887cd3e04716c60, type: 3}
-      propertyPath: animator
-      value: 
-      objectReference: {fileID: 188096149430391951}
     - target: {fileID: 188096150941977377, guid: 5913e209274046d48887cd3e04716c60, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -3958,16 +3950,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5913e209274046d48887cd3e04716c60, type: 3}
---- !u!61 &188096149430391950 stripped
-BoxCollider2D:
-  m_CorrespondingSourceObject: {fileID: 188096150941977382, guid: 5913e209274046d48887cd3e04716c60, type: 3}
-  m_PrefabInstance: {fileID: 188096149430391947}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &188096149430391951 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 188096150941977376, guid: 5913e209274046d48887cd3e04716c60, type: 3}
-  m_PrefabInstance: {fileID: 188096149430391947}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1903442202572993367
 PrefabInstance:
   m_ObjectHideFlags: 0
