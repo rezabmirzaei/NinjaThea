@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     private float horizontalMove = 0f;
     private bool jump = false;
     [SerializeField] private float moveSpeed = 7f;
+    [SerializeField] private bool facingRight = true;
     [SerializeField] private float jumpForce = 14f;
     [SerializeField] private LayerMask terrain;
 
@@ -51,15 +52,14 @@ public class PlayerMovement : MonoBehaviour
     {
         MovementState state;
 
-        if (horizontalMove > 0f)
+        if (horizontalMove != 0f)
         {
             state = MovementState.running;
-            spriteRenderer.flipX = false;
-        }
-        else if (horizontalMove < 0f)
-        {
-            state = MovementState.running;
-            spriteRenderer.flipX = true;
+            if ((horizontalMove < 0f && facingRight) || (horizontalMove > 0f && !facingRight))
+            {
+                facingRight = !facingRight;
+                transform.Rotate(new Vector3(0, 180, 0));
+            }
         }
         else
         {
