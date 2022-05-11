@@ -4006,7 +4006,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1903442202445911864, guid: 63d7ac7c51a5cc040b8df35f1e555a4b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 40.18
+      value: 39.68
       objectReference: {fileID: 0}
     - target: {fileID: 1903442202445911864, guid: 63d7ac7c51a5cc040b8df35f1e555a4b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4256,25 +4256,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1516768368}
     - target: {fileID: 4509868596666571655, guid: a7034bc394b02d9409597efc00b3efb2, type: 3}
-      propertyPath: countdownSteps.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4509868596666571655, guid: a7034bc394b02d9409597efc00b3efb2, type: 3}
       propertyPath: tasksNotCompleteWarningText
       value: 
       objectReference: {fileID: 1728366432}
-    - target: {fileID: 4509868596666571655, guid: a7034bc394b02d9409597efc00b3efb2, type: 3}
-      propertyPath: countdownSteps.Array.data[0]
-      value: GO!
-      objectReference: {fileID: 0}
-    - target: {fileID: 4509868596666571655, guid: a7034bc394b02d9409597efc00b3efb2, type: 3}
-      propertyPath: countdownSteps.Array.data[1]
-      value: Steady...
-      objectReference: {fileID: 0}
-    - target: {fileID: 4509868596666571655, guid: a7034bc394b02d9409597efc00b3efb2, type: 3}
-      propertyPath: countdownSteps.Array.data[2]
-      value: Ready...
-      objectReference: {fileID: 0}
     - target: {fileID: 4509868596666571657, guid: a7034bc394b02d9409597efc00b3efb2, type: 3}
       propertyPath: m_Name
       value: Game Controller
@@ -4402,10 +4386,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7968934366372411778, guid: 455c9b78c15e2474c861c3378fa12439, type: 3}
-      propertyPath: m_Color.a
-      value: 0.627451
-      objectReference: {fileID: 0}
     - target: {fileID: 7968934367263289825, guid: 455c9b78c15e2474c861c3378fa12439, type: 3}
       propertyPath: m_Pivot.x
       value: 0

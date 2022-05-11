@@ -66,8 +66,6 @@ public class GameController : MonoBehaviour
         tasksCompleted = false;
         gamePlaying = false;
 
-        Debug.Log(numdEnemiesKilled + " " + numTotalEnemies);
-
         StartCoroutine(CountdownToBeginGame());
     }
 

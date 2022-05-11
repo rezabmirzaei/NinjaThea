@@ -495,10 +495,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 3326274982575387166}
   coll: {fileID: 3326274982575387165}
-  spriteRenderer: {fileID: 3326274982575387162}
   animator: {fileID: 3326274982575387163}
   jumpSound: {fileID: 3326274982575387138}
   moveSpeed: 7
+  facingRight: 1
   jumpForce: 14
   terrain:
     serializedVersion: 2
@@ -546,7 +546,7 @@ MonoBehaviour:
   rb: {fileID: 3326274982575387166}
   animator: {fileID: 3326274982575387163}
   attackPoint: {fileID: 1600821070}
-  attackRange: 0.7
+  attackRange: 0.6
   enemyLayer:
     serializedVersion: 2
     m_Bits: 512

@@ -49,14 +49,14 @@ MonoBehaviour:
   gamePlaying: 0
   backgroundMusic: {fileID: 0}
   itemsContainer: {fileID: 0}
+  itemText: {fileID: 0}
+  enemiesContainer: {fileID: 0}
+  enemyText: {fileID: 0}
   hudContainer: {fileID: 0}
   levelCompleteContainer: {fileID: 0}
-  itemText: {fileID: 0}
   timeText: {fileID: 0}
   countdownText: {fileID: 0}
   countdownSteps:
-  - Ready...
-  - Steady...
   - GO!
   countdownStepsAudio: {fileID: 825055189}
   levelCompleteTimeText: {fileID: 0}
