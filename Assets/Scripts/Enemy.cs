@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour
 
     public void Die()
     {
+        GameController.Instance.EnemyKilled();
         animator.SetTrigger("Death");
         coll.enabled = false;
         this.enabled = false;
