@@ -66,6 +66,8 @@ public class GameController : MonoBehaviour
         tasksCompleted = false;
         gamePlaying = false;
 
+        Cursor.visible = false;
+
         StartCoroutine(CountdownToBeginGame());
     }
 
@@ -143,6 +145,7 @@ public class GameController : MonoBehaviour
     public void LevelComplete()
     {
         levelCompleteContainer.SetActive(true);
+        Cursor.visible = true;
         // TODO Handle better in AudioManager
         backgroundMusic.gameObject.SetActive(false);
         gamePlaying = false;
