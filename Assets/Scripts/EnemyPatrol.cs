@@ -9,9 +9,9 @@ public class EnemyPatrol : MonoBehaviour
     [Header("Enemy")]
     [SerializeField] private Transform enemy;
     [SerializeField] private float speed = 2;
+    [SerializeField] private bool movingLeft;
 
     private Vector3 initScale;
-    private bool movingLeft;
 
     private void Awake()
     {

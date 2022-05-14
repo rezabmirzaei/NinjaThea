@@ -334,7 +334,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '[ITEMS]: x/y'
+  m_text: '[ENEMIES]: x/y'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b13d6e8af1fef174ca143e272f09c024, type: 2}
   m_sharedMaterial: {fileID: 7759721623890837852, guid: b13d6e8af1fef174ca143e272f09c024, type: 2}
