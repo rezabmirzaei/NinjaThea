@@ -8,6 +8,7 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private Transform attackPoint;
     [SerializeField] private float attackRange = .5f;
     [SerializeField] private float attackRate = 2f;
+    [SerializeField] private AudioSource attackSound;
     [SerializeField] private LayerMask enemyLayer;
 
     private float nextAttackTime = 0f;
@@ -26,6 +27,7 @@ public class PlayerAttack : MonoBehaviour
 
     private void Attack()
     {
+        attackSound.Play();
         if (rb.velocity.y > .1f || rb.velocity.y < -.1f)
         {
             animator.SetTrigger("Attack Jump");
