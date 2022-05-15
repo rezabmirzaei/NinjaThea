@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crossfadeAnimator: {fileID: 5206124456185525971}
-  transitionTime: 1
+  transitionTime: 2
 --- !u!1 &5206124456185525928
 GameObject:
   m_ObjectHideFlags: 0
