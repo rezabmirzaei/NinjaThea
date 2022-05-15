@@ -61,7 +61,7 @@ GameObject:
   - component: {fileID: 5206124456185525974}
   - component: {fileID: 5206124456185525971}
   m_Layer: 5
-  m_Name: Crossfade
+  m_Name: Crossfade Canvas
   m_TagString: UI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -107,7 +107,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!114 &5206124456185525973
 MonoBehaviour:
