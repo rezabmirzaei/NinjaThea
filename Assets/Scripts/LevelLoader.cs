@@ -6,7 +6,7 @@ public class LevelLoader : MonoBehaviour
 {
 
     [SerializeField] private Animator crossfadeAnimator;
-    [SerializeField] private float transitionTime = 1f;
+    [SerializeField] private float transitionTime = 2f;
 
     public void LoadLevel(string levelName)
     {
