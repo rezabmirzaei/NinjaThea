@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3cc3e7609af61664babe6b40b748c6d5
+guid: b53e5b18b7077df40b086d73c364230b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,85 +104,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ninja Attack Top 1920x240_0
+      name: Ninja Thea Attack Jump 1920x240_0
       rect:
         serializedVersion: 2
-        x: 64
+        x: 163
+        y: 56
+        width: 146
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 619690b6a0ee5c944a292f41c547e7bc
+      internalID: 227508860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja Thea Attack Jump 1920x240_1
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 56
+        width: 264
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba3d939db58705743ad1198b5aca709e
+      internalID: 1276223678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja Thea Attack Jump 1920x240_2
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 56
+        width: 294
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3a90b86e74eb2c4abd2d2b81021844e
+      internalID: -1838766518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja Thea Attack Jump 1920x240_3
+      rect:
+        serializedVersion: 2
+        x: 1512
         y: 56
         width: 296
         height: 152
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 611b22b16da03af4e94892303a575bd3
-      internalID: 89978013
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ninja Attack Top 1920x240_1
-      rect:
-        serializedVersion: 2
-        x: 552
-        y: 56
-        width: 296
-        height: 152
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e1201827e8df1be4d83a99179b43d021
-      internalID: 1809243544
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ninja Attack Top 1920x240_2
-      rect:
-        serializedVersion: 2
-        x: 1136
-        y: 58
-        width: 128
-        height: 152
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6ce7abc84df92ea4d9e3aa8c17887779
-      internalID: -327259214
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ninja Attack Top 1920x240_3
-      rect:
-        serializedVersion: 2
-        x: 1612
-        y: 56
-        width: 128
-        height: 152
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8a79d651bd5c5984f9535aea999bb41f
-      internalID: 875270289
+      spriteID: 8d57f613d139f6f4eaf9dea39dcfd135
+      internalID: -1484054246
       vertices: []
       indices: 
       edges: []
@@ -198,10 +198,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Ninja Attack Top 1920x240_0: 89978013
-      Ninja Attack Top 1920x240_3: 875270289
-      Ninja Attack Top 1920x240_1: 1809243544
-      Ninja Attack Top 1920x240_2: -327259214
+      Ninja Thea Attack Jump 1920x240_1: 1276223678
+      Ninja Thea Attack Jump 1920x240_3: -1484054246
+      Ninja Thea Attack Jump 1920x240_2: -1838766518
+      Ninja Thea Attack Jump 1920x240_0: 227508860
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

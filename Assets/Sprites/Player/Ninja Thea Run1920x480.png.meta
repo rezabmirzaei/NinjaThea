@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ff593f617d543844c8b88f65024b47ab
+guid: 81e87097d86dce44a93a62219e02e55c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,96 +104,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ninja Fall 1920x720_0
+      name: Ninja Thea Run1920x480_0
       rect:
         serializedVersion: 2
-        x: 152
-        y: 536
-        width: 144
-        height: 144
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 968145a74028d7146a0d91837137c57c
-      internalID: 695267048
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ninja Fall 1920x720_1
-      rect:
-        serializedVersion: 2
-        x: 632
-        y: 536
-        width: 144
-        height: 144
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a27d43fd6bd026c46b37b50d056250ba
-      internalID: 2147097818
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ninja Fall 1920x720_2
-      rect:
-        serializedVersion: 2
-        x: 1112
-        y: 536
-        width: 144
-        height: 144
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a73bf1e3215bd7f4792e4fa0d9a9db3b
-      internalID: -1310344234
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ninja Fall 1920x720_3
-      rect:
-        serializedVersion: 2
-        x: 1592
-        y: 536
-        width: 144
-        height: 144
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aa13f17d5a2684146a5647b2c2c5a0c4
-      internalID: 1227925237
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ninja Fall 1920x720_4
-      rect:
-        serializedVersion: 2
-        x: 152
+        x: 144
         y: 296
-        width: 144
+        width: 160
         height: 144
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -202,20 +118,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4a1dda91ad6a0a47be0eba08f20d9a6
-      internalID: 734245230
+      spriteID: 92a3277f43ea7b14ebc21dd2c66f40df
+      internalID: -810562789
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ninja Fall 1920x720_5
+      name: Ninja Thea Run1920x480_1
       rect:
         serializedVersion: 2
         x: 632
         y: 296
-        width: 144
-        height: 144
+        width: 168
+        height: 136
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,19 +139,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 725c5d41a1a75c749bd79a10a6478f7d
-      internalID: -1218162514
+      spriteID: 019c411b447427e4984865b60c433c3b
+      internalID: -653152279
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ninja Fall 1920x720_6
+      name: Ninja Thea Run1920x480_2
       rect:
         serializedVersion: 2
-        x: 1112
+        x: 1120
         y: 296
-        width: 144
+        width: 160
         height: 144
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -244,19 +160,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff715585e75fc25438d2a5ff8074eed6
-      internalID: 456532650
+      spriteID: d7cc824fe0e999d46b15fd626edb6c7f
+      internalID: 1383271007
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ninja Fall 1920x720_7
+      name: Ninja Thea Run1920x480_3
       rect:
         serializedVersion: 2
         x: 1592
-        y: 296
-        width: 144
+        y: 304
+        width: 176
         height: 144
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -265,19 +181,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2208941a303dce346b8554292b3abb4e
-      internalID: -37409275
+      spriteID: 0b2b745b386ca7144a685f1172327aea
+      internalID: 564450288
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ninja Fall 1920x720_8
+      name: Ninja Thea Run1920x480_4
       rect:
         serializedVersion: 2
-        x: 152
+        x: 144
         y: 56
-        width: 144
+        width: 176
         height: 144
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -286,19 +202,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c51fba133a1fc654bb27521496da58be
-      internalID: 1194529521
+      spriteID: abf19949421c92749896500814c188b2
+      internalID: -947017942
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ninja Fall 1920x720_9
+      name: Ninja Thea Run1920x480_5
       rect:
         serializedVersion: 2
         x: 632
         y: 56
-        width: 144
+        width: 168
         height: 144
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -307,18 +223,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b8aa04b68cd5b94b8184a8a2a6cd08c
-      internalID: 2064917203
+      spriteID: aab94cdc09689514fa9dd429ad690929
+      internalID: 751209403
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ninja Fall 1920x720_10
+      name: Ninja Thea Run1920x480_6
       rect:
         serializedVersion: 2
-        x: 1112
-        y: 56
+        x: 1120
+        y: 64
         width: 144
         height: 144
       alignment: 0
@@ -328,18 +244,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e790dd70feb75874786418182f9245cb
-      internalID: 494893496
+      spriteID: 28ceaff1e86034e4ea4a58a6ba3ee82c
+      internalID: -164945399
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ninja Fall 1920x720_11
+      name: Ninja Thea Run1920x480_7
       rect:
         serializedVersion: 2
         x: 1592
-        y: 56
+        y: 64
         width: 144
         height: 144
       alignment: 0
@@ -349,8 +265,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab41558236f7e214db99834b0ff04a92
-      internalID: -1193970544
+      spriteID: 80c1286d913cdf04abac5e36b9833721
+      internalID: -2236992
       vertices: []
       indices: 
       edges: []
@@ -366,18 +282,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Ninja Fall 1920x720_4: 734245230
-      Ninja Fall 1920x720_0: 695267048
-      Ninja Fall 1920x720_11: -1193970544
-      Ninja Fall 1920x720_2: -1310344234
-      Ninja Fall 1920x720_9: 2064917203
-      Ninja Fall 1920x720_10: 494893496
-      Ninja Fall 1920x720_3: 1227925237
-      Ninja Fall 1920x720_5: -1218162514
-      Ninja Fall 1920x720_1: 2147097818
-      Ninja Fall 1920x720_8: 1194529521
-      Ninja Fall 1920x720_6: 456532650
-      Ninja Fall 1920x720_7: -37409275
+      Ninja Thea Run1920x480_2: 1383271007
+      Ninja Thea Run1920x480_7: -2236992
+      Ninja Thea Run1920x480_6: -164945399
+      Ninja Thea Run1920x480_3: 564450288
+      Ninja Thea Run1920x480_0: -810562789
+      Ninja Thea Run1920x480_4: -947017942
+      Ninja Thea Run1920x480_1: -653152279
+      Ninja Thea Run1920x480_5: 751209403
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5e954b59875d3924db48a9e9ad0437b7
+guid: e9ce6a4cbd907544a981eabd231ea44c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,106 +104,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ninja Attack Low1920x240_0
+      name: Ninja Thea Attack 1920x240_0
       rect:
         serializedVersion: 2
-        x: 108
+        x: 64
         y: 56
-        width: 264
+        width: 320
         height: 152
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eacb42183b2c40448b22d19b4f1a7f48
-      internalID: 932629041
+      spriteID: 10022127fa6928d43a472749d1a31dc9
+      internalID: -754446376
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ninja Attack Low1920x240_1
+      name: Ninja Thea Attack 1920x240_1
       rect:
         serializedVersion: 2
-        x: 576
-        y: 57
-        width: 264
+        x: 553
+        y: 55
+        width: 320
         height: 152
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee56d59fc7af44e4d8bf1567a772d780
-      internalID: 1222425305
+      spriteID: c994758f51ff3f942b492bc91052fe44
+      internalID: -396770262
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ninja Attack Low1920x240_2
+      name: Ninja Thea Attack 1920x240_2
       rect:
         serializedVersion: 2
-        x: 1032
+        x: 1111
         y: 56
-        width: 264
+        width: 183
         height: 152
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e355ba397d14134689d87e70da8410e
-      internalID: -1411461712
+      spriteID: adeaf5b50d2243b458e5808331277d75
+      internalID: 1467330880
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ninja Attack Low1920x240_3
+      name: Ninja Thea Attack 1920x240_3
       rect:
         serializedVersion: 2
-        x: 1512
+        x: 1588
         y: 56
-        width: 264
+        width: 190
         height: 152
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85b181d8dd4614a48943ce1c71510731
-      internalID: -1150078798
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ninja Attack Low1920x240_4
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 56
-        width: 264
-        height: 152
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2bb39c4bfdb1a9b4a8d1745c8ddc78bd
-      internalID: 496630599
+      spriteID: 58b808174371a734db4dc4eb419f68c3
+      internalID: -1846674872
       vertices: []
       indices: 
       edges: []
@@ -219,11 +198,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Ninja Attack Low1920x240_4: 496630599
-      Ninja Attack Low1920x240_1: 1222425305
-      Ninja Attack Low1920x240_2: -1411461712
-      Ninja Attack Low1920x240_3: -1150078798
-      Ninja Attack Low1920x240_0: 932629041
+      Ninja Thea Attack 1920x240_0: -754446376
+      Ninja Thea Attack 1920x240_2: 1467330880
+      Ninja Thea Attack 1920x240_1: -396770262
+      Ninja Thea Attack 1920x240_3: -1846674872
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
