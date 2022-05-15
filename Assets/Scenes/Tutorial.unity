@@ -780,10 +780,6 @@ PrefabInstance:
       propertyPath: transitionTime
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 5206124457105476850, guid: 368fb10e351dff24a82f31afed1ae157, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 368fb10e351dff24a82f31afed1ae157, type: 3}
 --- !u!1 &1166502540
@@ -3979,6 +3975,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 236906573}
     m_Modifications:
+    - target: {fileID: 1860771759, guid: 5913e209274046d48887cd3e04716c60, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 188096150941977377, guid: 5913e209274046d48887cd3e04716c60, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -4026,6 +4026,22 @@ PrefabInstance:
     - target: {fileID: 188096150941977378, guid: 5913e209274046d48887cd3e04716c60, type: 3}
       propertyPath: m_Name
       value: Mouse
+      objectReference: {fileID: 0}
+    - target: {fileID: 188096150941977382, guid: 5913e209274046d48887cd3e04716c60, type: 3}
+      propertyPath: m_Size.x
+      value: 0.8863106
+      objectReference: {fileID: 0}
+    - target: {fileID: 188096150941977382, guid: 5913e209274046d48887cd3e04716c60, type: 3}
+      propertyPath: m_Size.y
+      value: 0.6537075
+      objectReference: {fileID: 0}
+    - target: {fileID: 188096150941977382, guid: 5913e209274046d48887cd3e04716c60, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.12823486
+      objectReference: {fileID: 0}
+    - target: {fileID: 188096150941977382, guid: 5913e209274046d48887cd3e04716c60, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.037602425
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5913e209274046d48887cd3e04716c60, type: 3}
@@ -4150,6 +4166,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2015642711, guid: dc4cc4f1aa85847458c845c61337d4e7, type: 3}
+      propertyPath: attackRange
+      value: 0.65
+      objectReference: {fileID: 0}
     - target: {fileID: 3326274982575387156, guid: dc4cc4f1aa85847458c845c61337d4e7, type: 3}
       propertyPath: m_Name
       value: Player
