@@ -140,6 +140,7 @@ public class GameController : MonoBehaviour
     private void CheckTasksCompleted()
     {
         tasksCompleted = (numItemsCollected >= numTotalItems) && (numdEnemiesKilled >= numTotalEnemies);
+        Debug.Log(tasksCompleted);
     }
 
     public void LevelComplete()
