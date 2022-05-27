@@ -179,7 +179,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9811321, g: 0.43873262, b: 0.43873262, a: 1}
+  m_Color: {r: 0.627451, g: 0.5882353, b: 0.5882353, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -270,6 +270,10 @@ PrefabInstance:
     - target: {fileID: 5206124455903348401, guid: 368fb10e351dff24a82f31afed1ae157, type: 3}
       propertyPath: m_Name
       value: Level Loader
+      objectReference: {fileID: 0}
+    - target: {fileID: 5206124455903348401, guid: 368fb10e351dff24a82f31afed1ae157, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 368fb10e351dff24a82f31afed1ae157, type: 3}
@@ -974,10 +978,10 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.98039216, g: 0.8442578, b: 0.49411765, a: 1}
-    m_HighlightedColor: {r: 0.9056604, g: 0.7450476, b: 0.33663222, a: 1}
-    m_PressedColor: {r: 0.8207547, g: 0.6508579, b: 0.21990028, a: 1}
-    m_SelectedColor: {r: 0.81960785, g: 0.6509804, b: 0.21960784, a: 1}
+    m_NormalColor: {r: 0.98039216, g: 0.37254903, b: 0.37254903, a: 1}
+    m_HighlightedColor: {r: 0.9019608, g: 0.29411766, b: 0.29411766, a: 1}
+    m_PressedColor: {r: 0.8235294, g: 0.25490198, b: 0.25490198, a: 1}
+    m_SelectedColor: {r: 0.8235294, g: 0.25490198, b: 0.25490198, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1

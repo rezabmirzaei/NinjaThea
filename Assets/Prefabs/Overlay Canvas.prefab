@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 285012677}
   - component: {fileID: 285012676}
   m_Layer: 5
-  m_Name: Quit Button
+  m_Name: Quit Button (HUD)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -91,18 +91,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnUp: {fileID: 597149693}
+    m_SelectOnDown: {fileID: 597149693}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0.9811321, g: 0.3739409, b: 0.3739409, a: 1}
-    m_HighlightedColor: {r: 0.9056604, g: 0.2853684, b: 0.2853684, a: 1}
-    m_PressedColor: {r: 0.8301887, g: 0.24592379, b: 0.24592379, a: 1}
-    m_SelectedColor: {r: 0.83137256, g: 0.24705882, b: 0.24705882, a: 1}
+    m_HighlightedColor: {r: 0.9019608, g: 0.29411766, b: 0.29411766, a: 1}
+    m_PressedColor: {r: 0.8235294, g: 0.25490198, b: 0.25490198, a: 1}
+    m_SelectedColor: {r: 0.8235294, g: 0.25490198, b: 0.25490198, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -225,18 +225,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnUp: {fileID: 285012676}
+    m_SelectOnDown: {fileID: 285012676}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.63083166, g: 0.9811321, b: 0.49426842, a: 1}
-    m_HighlightedColor: {r: 0.4837284, g: 0.8396226, b: 0.34377003, a: 1}
-    m_PressedColor: {r: 0.3258464, g: 0.745283, b: 0.16452472, a: 1}
-    m_SelectedColor: {r: 0.3254902, g: 0.74509805, b: 0.16470589, a: 1}
+    m_NormalColor: {r: 0.5882353, g: 0.9811321, b: 0.5882353, a: 1}
+    m_HighlightedColor: {r: 0.47058824, g: 0.78431374, b: 0.3529412, a: 1}
+    m_PressedColor: {r: 0.3137255, g: 0.745283, b: 0.15686275, a: 1}
+    m_SelectedColor: {r: 0.3137255, g: 0.74509805, b: 0.15686275, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -256,16 +256,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 429818704}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: LoadScene
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: LevelLoader, Assembly-CSharp
+        m_MethodName: LoadLevel
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Level 1
+          m_StringArgument: Level 2
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &706428878

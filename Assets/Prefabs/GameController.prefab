@@ -57,6 +57,8 @@ MonoBehaviour:
   timeText: {fileID: 0}
   countdownText: {fileID: 0}
   countdownSteps:
+  - Ready!
+  - Steady!
   - GO!
   countdownStepsAudio: {fileID: 825055189}
   levelCompleteTimeText: {fileID: 0}

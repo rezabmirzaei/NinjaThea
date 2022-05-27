@@ -1909,14 +1909,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level Loader
       objectReference: {fileID: 0}
-    - target: {fileID: 5206124455903348401, guid: 368fb10e351dff24a82f31afed1ae157, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5206124455903348415, guid: 368fb10e351dff24a82f31afed1ae157, type: 3}
-      propertyPath: transitionTime
-      value: 2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 368fb10e351dff24a82f31afed1ae157, type: 3}
 --- !u!114 &1121728420 stripped
@@ -7047,25 +7039,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1516768368}
     - target: {fileID: 4509868596666571655, guid: a7034bc394b02d9409597efc00b3efb2, type: 3}
-      propertyPath: countdownSteps.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4509868596666571655, guid: a7034bc394b02d9409597efc00b3efb2, type: 3}
       propertyPath: tasksNotCompleteWarningText
       value: 
       objectReference: {fileID: 1728366432}
-    - target: {fileID: 4509868596666571655, guid: a7034bc394b02d9409597efc00b3efb2, type: 3}
-      propertyPath: countdownSteps.Array.data[0]
-      value: Ready!
-      objectReference: {fileID: 0}
-    - target: {fileID: 4509868596666571655, guid: a7034bc394b02d9409597efc00b3efb2, type: 3}
-      propertyPath: countdownSteps.Array.data[1]
-      value: Steady!
-      objectReference: {fileID: 0}
-    - target: {fileID: 4509868596666571655, guid: a7034bc394b02d9409597efc00b3efb2, type: 3}
-      propertyPath: countdownSteps.Array.data[2]
-      value: GO!
-      objectReference: {fileID: 0}
     - target: {fileID: 4509868596666571657, guid: a7034bc394b02d9409597efc00b3efb2, type: 3}
       propertyPath: m_Name
       value: Game Controller
@@ -7136,10 +7112,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7968934366372411778, guid: 455c9b78c15e2474c861c3378fa12439, type: 3}
-      propertyPath: m_Color.a
-      value: 0.627451
-      objectReference: {fileID: 0}
+    - target: {fileID: 7968934366050577307, guid: 455c9b78c15e2474c861c3378fa12439, type: 3}
+      propertyPath: m_Navigation.m_SelectOnUp
+      value: 
+      objectReference: {fileID: 8256643196118948323}
+    - target: {fileID: 7968934366050577307, guid: 455c9b78c15e2474c861c3378fa12439, type: 3}
+      propertyPath: m_Navigation.m_SelectOnDown
+      value: 
+      objectReference: {fileID: 8256643196118948323}
     - target: {fileID: 7968934367263289825, guid: 455c9b78c15e2474c861c3378fa12439, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -7237,58 +7217,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 285012676, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
-      propertyPath: m_Colors.m_PressedColor.b
-      value: 0.25490198
-      objectReference: {fileID: 0}
-    - target: {fileID: 285012676, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
-      propertyPath: m_Colors.m_PressedColor.g
-      value: 0.25490198
-      objectReference: {fileID: 0}
-    - target: {fileID: 285012676, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
-      propertyPath: m_Colors.m_PressedColor.r
-      value: 0.8235294
-      objectReference: {fileID: 0}
-    - target: {fileID: 285012676, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
-      propertyPath: m_Colors.m_SelectedColor.b
-      value: 0.25490198
-      objectReference: {fileID: 0}
-    - target: {fileID: 285012676, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
-      propertyPath: m_Colors.m_SelectedColor.g
-      value: 0.25490198
-      objectReference: {fileID: 0}
-    - target: {fileID: 285012676, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
-      propertyPath: m_Colors.m_SelectedColor.r
-      value: 0.8235294
-      objectReference: {fileID: 0}
-    - target: {fileID: 285012676, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
-      propertyPath: m_Colors.m_HighlightedColor.b
-      value: 0.29411766
-      objectReference: {fileID: 0}
-    - target: {fileID: 285012676, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
-      propertyPath: m_Colors.m_HighlightedColor.g
-      value: 0.29411766
-      objectReference: {fileID: 0}
-    - target: {fileID: 285012676, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
-      propertyPath: m_Colors.m_HighlightedColor.r
-      value: 0.9019608
-      objectReference: {fileID: 0}
     - target: {fileID: 597149693, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1121728420}
-    - target: {fileID: 597149693, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadLevel
-      objectReference: {fileID: 0}
-    - target: {fileID: 597149693, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: LevelLoader, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 597149693, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Level 2
-      objectReference: {fileID: 0}
     - target: {fileID: 8256643196293748516, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
       propertyPath: m_Name
       value: Overlay Canvas
@@ -7388,5 +7320,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8256643196118948323 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 597149693, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
+  m_PrefabInstance: {fileID: 8256643196118948320}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
