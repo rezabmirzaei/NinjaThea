@@ -4250,25 +4250,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1516768368}
     - target: {fileID: 4509868596666571655, guid: a7034bc394b02d9409597efc00b3efb2, type: 3}
-      propertyPath: countdownSteps.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4509868596666571655, guid: a7034bc394b02d9409597efc00b3efb2, type: 3}
       propertyPath: tasksNotCompleteWarningText
       value: 
       objectReference: {fileID: 1728366432}
-    - target: {fileID: 4509868596666571655, guid: a7034bc394b02d9409597efc00b3efb2, type: 3}
-      propertyPath: countdownSteps.Array.data[0]
-      value: Ready!
-      objectReference: {fileID: 0}
-    - target: {fileID: 4509868596666571655, guid: a7034bc394b02d9409597efc00b3efb2, type: 3}
-      propertyPath: countdownSteps.Array.data[1]
-      value: Steady!
-      objectReference: {fileID: 0}
-    - target: {fileID: 4509868596666571655, guid: a7034bc394b02d9409597efc00b3efb2, type: 3}
-      propertyPath: countdownSteps.Array.data[2]
-      value: GO!
-      objectReference: {fileID: 0}
     - target: {fileID: 4509868596666571657, guid: a7034bc394b02d9409597efc00b3efb2, type: 3}
       propertyPath: m_Name
       value: Game Controller
@@ -4554,14 +4538,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1121728420}
-    - target: {fileID: 597149693, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadLevel
-      objectReference: {fileID: 0}
-    - target: {fileID: 597149693, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Level 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8256643196293748516, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
       propertyPath: m_Name
       value: Overlay Canvas

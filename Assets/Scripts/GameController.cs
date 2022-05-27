@@ -96,6 +96,7 @@ public class GameController : MonoBehaviour
             if (iterations == countdownSteps.Length)
             {
                 countdownText.fontSize = 168;
+                countdownText.fontStyle = FontStyles.Italic | FontStyles.Bold;
                 BeginGame();
             }
             countdownText.text = step;
