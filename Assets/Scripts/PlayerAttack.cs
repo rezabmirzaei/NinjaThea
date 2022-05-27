@@ -15,12 +15,15 @@ public class PlayerAttack : MonoBehaviour
 
     private void Update()
     {
-        if (Time.time >= nextAttackTime)
+        if (!gameObject.GetComponent<PlayerLife>().IsDead())
         {
-            if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
+            if (Time.time >= nextAttackTime)
             {
-                Attack();
-                nextAttackTime = Time.time + 1f / attackRate;
+                if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
+                {
+                    Attack();
+                    nextAttackTime = Time.time + 1f / attackRate;
+                }
             }
         }
     }

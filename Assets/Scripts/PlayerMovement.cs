@@ -18,22 +18,26 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        if (GameController.Instance.gamePlaying)
+        if (!gameObject.GetComponent<PlayerLife>().IsDead())
         {
-            horizontalMove = Input.GetAxisRaw("Horizontal");
-
-            if (Input.GetButtonDown("Jump") && isGrounded())
+            if (GameController.Instance.gamePlaying)
             {
-                jump = true;
-            }
-        }
-        else
-        {
-            horizontalMove = 0;
-            jump = false;
-        }
+                horizontalMove = Input.GetAxisRaw("Horizontal");
 
-        UpdateAnimationState();
+                if (Input.GetButtonDown("Jump") && isGrounded())
+                {
+                    jump = true;
+                }
+            }
+            else
+            {
+                horizontalMove = 0;
+                jump = false;
+            }
+
+            UpdateAnimationState();
+
+        }
     }
 
     private void FixedUpdate()
