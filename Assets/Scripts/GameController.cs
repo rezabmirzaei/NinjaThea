@@ -96,13 +96,12 @@ public class GameController : MonoBehaviour
             if (iterations == countdownSteps.Length)
             {
                 countdownText.fontSize = 168;
+                BeginGame();
             }
             countdownText.text = step;
             countdownStepsAudio.Play();
             yield return new WaitForSeconds(1f);
         }
-
-        BeginGame();
 
         yield return new WaitForSeconds(.5f);
         countdownText.gameObject.SetActive(false);

@@ -751,6 +751,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BG Music
       objectReference: {fileID: 0}
+    - target: {fileID: 6266125489989344206, guid: 084a08014a2008e4fa2e3ce3484faf3b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266125489989344207, guid: 084a08014a2008e4fa2e3ce3484faf3b, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: d16484961fbcdb64badb153e50d72a32, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 084a08014a2008e4fa2e3ce3484faf3b, type: 3}
 --- !u!1 &1181470196
