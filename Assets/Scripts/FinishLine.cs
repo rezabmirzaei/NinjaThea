@@ -23,14 +23,8 @@ public class FinishLine : MonoBehaviour
                 if (levelCompleteAchievementID != null && SteamManager.Initialized)
                 {
                     Steamworks.SteamUserStats.GetAchievement(levelCompleteAchievementID, out bool achievementUnlocked);
-
-                    Debug.Log("Achievement unlocked: " + achievementUnlocked);
-
                     if (!achievementUnlocked)
                     {
-
-                        Debug.Log("Unlocking achievement: " + levelCompleteAchievementID);
-
                         SteamUserStats.SetAchievement(levelCompleteAchievementID);
                         SteamUserStats.StoreStats();
                     }
