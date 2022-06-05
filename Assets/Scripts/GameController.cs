@@ -144,6 +144,7 @@ public class GameController : MonoBehaviour
 
     public void LevelComplete()
     {
+        DataPersistenceManager.Instance.SaveData();
         levelCompleteContainer.SetActive(true);
         Cursor.visible = true;
         // TODO Handle better in AudioManager
