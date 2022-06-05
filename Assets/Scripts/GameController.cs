@@ -25,6 +25,7 @@ public class GameController : MonoBehaviour
     [SerializeField] private AudioSource countdownStepsAudio;
     [SerializeField] private TextMeshProUGUI levelCompleteTimeText;
     [SerializeField] private TextMeshProUGUI tasksNotCompleteWarningText;
+    [SerializeField] private bool saveGameDataOnComplete;
 
     private int numTotalItems;
     private string itemName;
@@ -67,6 +68,8 @@ public class GameController : MonoBehaviour
         gamePlaying = false;
 
         Cursor.visible = false;
+
+        saveGameDataOnComplete = false;
 
         StartCoroutine(CountdownToBeginGame());
     }
@@ -144,7 +147,10 @@ public class GameController : MonoBehaviour
 
     public void LevelComplete()
     {
-        DataPersistenceManager.Instance.SaveData();
+        if (saveGameDataOnComplete)
+        {
+            DataPersistenceManager.Instance.SaveData();
+        }
         levelCompleteContainer.SetActive(true);
         Cursor.visible = true;
         // TODO Handle better in AudioManager
