@@ -1,9 +1,11 @@
+using Steamworks;
 using UnityEngine;
 
 public class FinishLine : MonoBehaviour
 {
 
     [SerializeField] private AudioSource finishLineCrossedSound;
+    [SerializeField] private string levelCompleteAchievementID;
 
     private bool isFinished = false;
 
@@ -16,6 +18,24 @@ public class FinishLine : MonoBehaviour
             {
                 isFinished = true;
                 finishLineCrossedSound.Play();
+
+                // TODO handle this in separate class
+                if (levelCompleteAchievementID != null && SteamManager.Initialized)
+                {
+                    Steamworks.SteamUserStats.GetAchievement(levelCompleteAchievementID, out bool achievementUnlocked);
+
+                    Debug.Log("Achievement unlocked: " + achievementUnlocked);
+
+                    if (!achievementUnlocked)
+                    {
+
+                        Debug.Log("Unlocking achievement: " + levelCompleteAchievementID);
+
+                        SteamUserStats.SetAchievement(levelCompleteAchievementID);
+                        SteamUserStats.StoreStats();
+                    }
+                }
+
                 GameController.Instance.LevelComplete();
             }
         }
