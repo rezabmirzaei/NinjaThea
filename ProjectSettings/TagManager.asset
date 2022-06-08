@@ -10,6 +10,7 @@ TagManager:
   - Collectible
   - UI
   - Enemy
+  - Background
   layers:
   - Default
   - TransparentFX
@@ -46,6 +47,9 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 83870057
     locked: 0
   - name: Terrain
     uniqueID: 597050117
