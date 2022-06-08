@@ -983,7 +983,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1535735038056059182, guid: 5d6f90efac2edbf428c3ff08572a8ca8, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d6f90efac2edbf428c3ff08572a8ca8, type: 3}
@@ -1205,7 +1205,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5206124455903348401, guid: 368fb10e351dff24a82f31afed1ae157, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5206124455903348415, guid: 368fb10e351dff24a82f31afed1ae157, type: 3}
       propertyPath: transitionTime
@@ -4710,7 +4710,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2709613246534233120, guid: 8562046f23b75e1449cc071e7727089d, type: 3}
       propertyPath: levelCompleteAchievementID
-      value: ACH_TUTORIAL_CLEARED
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2709613246534233125, guid: 8562046f23b75e1449cc071e7727089d, type: 3}
       propertyPath: m_RootOrder
