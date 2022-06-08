@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2709613246534233126}
   - component: {fileID: 2709613246534233127}
   - component: {fileID: 2709613246534233120}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Finish Line
   m_TagString: Finishline
   m_Icon: {fileID: 0}
