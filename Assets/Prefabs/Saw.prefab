@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1903442202445911846}
   - component: {fileID: 1903442202445911847}
   - component: {fileID: 1903442202445911845}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: Saw
   m_TagString: Trap
   m_Icon: {fileID: 0}
@@ -72,8 +72,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -919291177
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -3049067163339015078, guid: 7d6c8dd55d3152447a7289be29ea4559, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

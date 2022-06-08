@@ -18,11 +18,11 @@ TagManager:
   - Player
   - Water
   - UI
+  - Background
   - Terrain
   - Item
   - Traps
   - Enemy
-  - 
   - 
   - 
   - 
@@ -51,15 +51,18 @@ TagManager:
   - name: Background
     uniqueID: 83870057
     locked: 0
-  - name: Terrain
-    uniqueID: 597050117
-    locked: 0
   - name: Traps
     uniqueID: 3375676119
+    locked: 0
+  - name: Terrain
+    uniqueID: 597050117
     locked: 0
   - name: Player
     uniqueID: 3999342807
     locked: 0
   - name: Item
     uniqueID: 829927201
+    locked: 0
+  - name: Enemy
+    uniqueID: 3409497699
     locked: 0
