@@ -9,6 +9,7 @@ public class ResetSteamAchievements : MonoBehaviour
     {
         if (resetAchievements && SteamManager.Initialized)
         {
+            Debug.LogWarning("Resetting stats and achievements!");
             Steamworks.SteamUserStats.ResetAllStats(true);
         }
     }
