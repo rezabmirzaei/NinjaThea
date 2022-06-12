@@ -132,6 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5424836}
+  - component: {fileID: 5424837}
   m_Layer: 5
   m_Name: Main Menu
   m_TagString: Untagged
@@ -162,6 +163,19 @@ RectTransform:
   m_AnchoredPosition: {x: -530.3445, y: -163}
   m_SizeDelta: {x: 800.1958, y: 565.5939}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &5424837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5424835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5e0cc4e3698cd94fb1b8e82c42b3000, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultHighlightedButton: {fileID: 1338476645}
 --- !u!1 &8284694
 GameObject:
   m_ObjectHideFlags: 0
@@ -770,7 +784,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c0ab4dfea0c29848a64e0657f12b7ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resetAchievements: 1
+  resetAchievements: 0
 --- !u!1 &847333611
 GameObject:
   m_ObjectHideFlags: 0
@@ -801,7 +815,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 1338476643}
+  m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &847333614
@@ -1643,6 +1657,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 735217991}
+        m_TargetAssemblyTypeName: PanelDefaultButtonHighlighter, Assembly-CSharp
+        m_MethodName: HighlightDefaultButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1311986061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1789,6 +1815,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 5424837}
+        m_TargetAssemblyTypeName: PanelDefaultButtonHighlighter, Assembly-CSharp
+        m_MethodName: HighlightDefaultButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1329132298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1927,6 +1965,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 310841437}
+        m_TargetAssemblyTypeName: PanelDefaultButtonHighlighter, Assembly-CSharp
+        m_MethodName: HighlightDefaultButton
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2757,6 +2807,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 5424837}
+        m_TargetAssemblyTypeName: PanelDefaultButtonHighlighter, Assembly-CSharp
+        m_MethodName: HighlightDefaultButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &2044895813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3236,6 +3298,10 @@ PrefabInstance:
     - target: {fileID: 1535735038056059182, guid: 5d6f90efac2edbf428c3ff08572a8ca8, type: 3}
       propertyPath: m_Name
       value: Steam Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 1535735038056059182, guid: 5d6f90efac2edbf428c3ff08572a8ca8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d6f90efac2edbf428c3ff08572a8ca8, type: 3}

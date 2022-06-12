@@ -7,6 +7,11 @@ public class PanelDefaultButtonHighlighter : MonoBehaviour
 
     private void Start()
     {
+        HighlightDefaultButton();
+    }
+
+    public void HighlightDefaultButton()
+    {
         defaultHighlightedButton.Select();
     }
 }
