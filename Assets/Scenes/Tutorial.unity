@@ -130,6 +130,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 836244240}
     m_Modifications:
+    - target: {fileID: 7208175288796717996, guid: 2437c126a07fa924bbfff4b3ff7ee1c4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 14.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7208175289324623634, guid: 2437c126a07fa924bbfff4b3ff7ee1c4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.900001
+      objectReference: {fileID: 0}
     - target: {fileID: 7208175289974190384, guid: 2437c126a07fa924bbfff4b3ff7ee1c4, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -177,6 +185,10 @@ PrefabInstance:
     - target: {fileID: 7208175289974190387, guid: 2437c126a07fa924bbfff4b3ff7ee1c4, type: 3}
       propertyPath: m_Name
       value: Moving Saw
+      objectReference: {fileID: 0}
+    - target: {fileID: 9107113685117363868, guid: 2437c126a07fa924bbfff4b3ff7ee1c4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12.804659
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2437c126a07fa924bbfff4b3ff7ee1c4, type: 3}
@@ -1205,7 +1217,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5206124455903348401, guid: 368fb10e351dff24a82f31afed1ae157, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5206124455903348415, guid: 368fb10e351dff24a82f31afed1ae157, type: 3}
       propertyPath: transitionTime
@@ -1441,6 +1453,77 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1516768368, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
   m_PrefabInstance: {fileID: 8256643196118948320}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1630390659
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1630390661}
+  - component: {fileID: 1630390660}
+  - component: {fileID: 1630390662}
+  m_Layer: 0
+  m_Name: Tutorial Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &1630390660
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1630390659}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 15.07626}
+  m_EdgeRadius: 0
+--- !u!4 &1630390661
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1630390659}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.34, y: -2.02, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1630390662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1630390659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 086a789306f3a8e44bf5c0b5aa7286a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1698385230
 GameObject:
   m_ObjectHideFlags: 0
@@ -5140,7 +5223,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6921972728058549813, guid: 9342ddc4429cc174391060a463371c9d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.25
+      value: 8.25
       objectReference: {fileID: 0}
     - target: {fileID: 6921972728058549813, guid: 9342ddc4429cc174391060a463371c9d, type: 3}
       propertyPath: m_LocalPosition.y
