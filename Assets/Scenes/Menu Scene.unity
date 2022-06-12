@@ -307,6 +307,7 @@ GameObject:
   - component: {fileID: 310841434}
   - component: {fileID: 310841436}
   - component: {fileID: 310841435}
+  - component: {fileID: 310841437}
   m_Layer: 5
   m_Name: New Game Panel
   m_TagString: Untagged
@@ -376,6 +377,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 310841433}
   m_CullTransparentMesh: 1
+--- !u!114 &310841437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 310841433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5e0cc4e3698cd94fb1b8e82c42b3000, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultHighlightedButton: {fileID: 1023641064}
 --- !u!1 &395975411
 GameObject:
   m_ObjectHideFlags: 0
@@ -599,6 +613,7 @@ GameObject:
   - component: {fileID: 735217988}
   - component: {fileID: 735217990}
   - component: {fileID: 735217989}
+  - component: {fileID: 735217991}
   m_Layer: 5
   m_Name: Level Select Panel
   m_TagString: Untagged
@@ -666,6 +681,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 735217987}
   m_CullTransparentMesh: 1
+--- !u!114 &735217991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735217987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5e0cc4e3698cd94fb1b8e82c42b3000, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultHighlightedButton: {fileID: 2044895812}
 --- !u!1 &800205787
 GameObject:
   m_ObjectHideFlags: 0
@@ -1207,12 +1235,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 0
+    m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 8284696}
-    m_SelectOnDown: {fileID: 1311986060}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 1329132297}
+    m_SelectOnLeft: {fileID: 1444379677}
+    m_SelectOnRight: {fileID: 1444379677}
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
@@ -1706,10 +1734,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 0
+    m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 8284696}
-    m_SelectOnDown: {fileID: 1311986060}
+    m_SelectOnUp: {fileID: 1444379677}
+    m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
@@ -2135,12 +2163,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 0
+    m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 8284696}
-    m_SelectOnDown: {fileID: 1311986060}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 1329132297}
+    m_SelectOnLeft: {fileID: 1023641064}
+    m_SelectOnRight: {fileID: 1023641064}
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
@@ -2674,10 +2702,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 0
+    m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 8284696}
-    m_SelectOnDown: {fileID: 1311986060}
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
@@ -3268,7 +3296,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5206124455903348401, guid: 368fb10e351dff24a82f31afed1ae157, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 368fb10e351dff24a82f31afed1ae157, type: 3}
