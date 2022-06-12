@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class SoundManager : MonoBehaviour
+public class AudioManager : MonoBehaviour
 {
-    public static SoundManager Instance;
+    public static AudioManager Instance;
 
     [SerializeField] private AudioSource musicSource;
 

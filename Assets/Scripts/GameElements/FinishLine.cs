@@ -18,18 +18,7 @@ public class FinishLine : MonoBehaviour
             {
                 isFinished = true;
                 finishLineCrossedSound.Play();
-
-                // TODO handle this in separate class
-                if (levelCompleteAchievementID != null && SteamManager.Initialized)
-                {
-                    Steamworks.SteamUserStats.GetAchievement(levelCompleteAchievementID, out bool achievementUnlocked);
-                    if (!achievementUnlocked)
-                    {
-                        SteamUserStats.SetAchievement(levelCompleteAchievementID);
-                        SteamUserStats.StoreStats();
-                    }
-                }
-
+                if (levelCompleteAchievementID != null) UserStatsHandler.Instance.PopAchievement(levelCompleteAchievementID);
                 GameController.Instance.LevelComplete();
             }
         }
