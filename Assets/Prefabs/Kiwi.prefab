@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2944576227939743842}
   - component: {fileID: 2944576227939743843}
   - component: {fileID: 2944576227939743841}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Kiwi
   m_TagString: Collectible
   m_Icon: {fileID: 0}
@@ -26,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2944576227939743845}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.6599998, y: 0.03572035, z: 4.8501377}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -72,8 +72,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 829927201
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 4138223980208024357, guid: 3c9bbf3a4f231c140812340045fa785d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
