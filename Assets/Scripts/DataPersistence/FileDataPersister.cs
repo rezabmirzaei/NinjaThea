@@ -9,7 +9,7 @@ public class FileDataPersister : IDataPersister
 
     public void Save(GameData gameData)
     {
-        Debug.Log("Saving game data to " + filePath);
+        Debug.Log("Saving " + gameData + " to " + filePath);
 
         try
         {
