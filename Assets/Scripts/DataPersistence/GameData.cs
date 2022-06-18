@@ -1,4 +1,6 @@
 using System.Collections.Generic;
+using UnityEngine;
+
 
 [System.Serializable]
 public class GameData
@@ -12,10 +14,13 @@ public class GameData
 
     public void UpdateLevelStatus(LevelData levelData)
     {
-        // Avoid duplicates (handle replay og levels already completed)
-        int index = LevelStatus.FindIndex(ld => ld == levelData);
+        // Avoid duplicates and only write over if better time
+        int index = LevelStatus.FindIndex(ld => ld.Equals(levelData));
         if (index != -1)
         {
+            LevelData allreadyPassedLevelData = LevelStatus[index];
+            // TODO Check if allreadyPassedLevelData.CompletionTime is greater than levelData.CompletionTime
+            // If so, replace ('cuz new one is better)
             LevelStatus[index] = levelData;
             return;
         }

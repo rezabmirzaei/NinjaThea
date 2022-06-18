@@ -30,7 +30,7 @@ public class FileDataPersister : IDataPersister
 
     public GameData Load()
     {
-        GameData loadedData = null;
+        GameData loadedGameData = null;
         if (File.Exists(filePath))
         {
             try
@@ -41,14 +41,13 @@ public class FileDataPersister : IDataPersister
                     using (StreamReader reader = new StreamReader(stream))
                     {
                         gameDataJson = reader.ReadToEnd();
-                        Debug.Log(gameDataJson);
                     }
                 }
-                if (loadedData == null)
+                if (gameDataJson == null)
                 {
                     return null;
                 }
-                loadedData = JsonUtility.FromJson<GameData>(gameDataJson);
+                loadedGameData = JsonUtility.FromJson<GameData>(gameDataJson);
             }
             catch (Exception e)
             {
@@ -56,7 +55,7 @@ public class FileDataPersister : IDataPersister
                 return null;
             }
         }
-        return loadedData;
+        return loadedGameData;
     }
 
 }

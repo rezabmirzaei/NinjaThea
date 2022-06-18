@@ -14,14 +14,18 @@ public class LevelData
 
     public override int GetHashCode()
     {
-        return (LevelName + CompletionTime).GetHashCode();
+        return LevelName.GetHashCode();
     }
 
     public override bool Equals(object obj)
     {
         LevelData levelData = obj as LevelData;
         return levelData != null
-            && String.Equals(this.LevelName, levelData.LevelName)
-            && String.Equals(this.CompletionTime, levelData.CompletionTime);
+            && String.Equals(this.LevelName, levelData.LevelName);
+    }
+
+    public override string ToString()
+    {
+        return LevelName + ": " + CompletionTime;
     }
 }
