@@ -28,9 +28,35 @@ public class FileDataPersister : IDataPersister
 
     }
 
-    public void Load(GameData gameData)
+    public GameData Load()
     {
-        // TODO Implement
+        GameData loadedData = null;
+        if (File.Exists(filePath))
+        {
+            try
+            {
+                string gameDataJson = null;
+                using (FileStream stream = new FileStream(filePath, FileMode.Open))
+                {
+                    using (StreamReader reader = new StreamReader(stream))
+                    {
+                        gameDataJson = reader.ReadToEnd();
+                        Debug.Log(gameDataJson);
+                    }
+                }
+                if (loadedData == null)
+                {
+                    return null;
+                }
+                loadedData = JsonUtility.FromJson<GameData>(gameDataJson);
+            }
+            catch (Exception e)
+            {
+                Debug.LogError(e);
+                return null;
+            }
+        }
+        return loadedData;
     }
 
 }

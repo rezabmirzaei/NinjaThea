@@ -24,6 +24,7 @@ public class DataPersistenceManager : MonoBehaviour
     private void Start()
     {
         this.dataPersister = new FileDataPersister();
+        LoadData();
     }
 
     public void SaveData(LevelData levelData)
@@ -41,9 +42,9 @@ public class DataPersistenceManager : MonoBehaviour
         dataPersister.Save(gameData);
     }
 
-    public void LoadData()
+    private void LoadData()
     {
-        // TODO Check if any saved data
+        gameData = dataPersister.Load();
         if (gameData == null)
         {
             gameData = new GameData();

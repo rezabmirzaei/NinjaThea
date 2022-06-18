@@ -1,7 +1,7 @@
 
 public interface IDataPersister
 {
-    void Load(GameData gameData);
+    GameData Load();
 
     void Save(GameData gameData);
 }
