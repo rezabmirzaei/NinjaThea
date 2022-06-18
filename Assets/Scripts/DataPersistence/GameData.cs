@@ -3,15 +3,23 @@ using System.Collections.Generic;
 [System.Serializable]
 public class GameData
 {
-    private HashSet<LevelData> LevelStatus { get; }
+    public List<LevelData> LevelStatus;
 
     public GameData()
     {
-        LevelStatus = new HashSet<LevelData>();
+        LevelStatus = new List<LevelData>();
     }
 
     public void UpdateLevelStatus(LevelData levelData)
     {
+        // Avoid duplicates (handle replay og levels already completed)
+        int index = LevelStatus.FindIndex(ld => ld == levelData);
+        if (index != -1)
+        {
+            LevelStatus[index] = levelData;
+            return;
+        }
+
         LevelStatus.Add(levelData);
     }
 

@@ -1,9 +1,10 @@
 using System;
 
+[Serializable]
 public class LevelData
 {
-    public string LevelName { get; }
-    public string CompletionTime { get; }
+    public string LevelName;
+    public string CompletionTime;
 
     public LevelData(string levelName, string completionTime)
     {

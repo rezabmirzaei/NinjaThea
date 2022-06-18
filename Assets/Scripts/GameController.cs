@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 using System;
 using System.Collections;
@@ -145,7 +146,7 @@ public class GameController : MonoBehaviour
     public void LevelComplete()
     {
         string completionTime = timePlaying.ToString("mm':'ss'.'ff");
-        LevelData levelData = new LevelData("Tutorial", completionTime);
+        LevelData levelData = new LevelData(SceneManager.GetActiveScene().name, completionTime);
         DataPersistenceManager.Instance.SaveData(levelData);
         levelCompleteContainer.SetActive(true);
         Cursor.visible = true;

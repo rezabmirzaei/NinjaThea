@@ -9,8 +9,6 @@ public class FileDataPersister : IDataPersister
 
     public void Save(GameData gameData)
     {
-        Debug.Log("Saving " + gameData + " to " + filePath);
-
         try
         {
             Directory.CreateDirectory(Path.GetDirectoryName(filePath));
