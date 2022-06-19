@@ -1,6 +1,5 @@
 using System.Collections.Generic;
-using UnityEngine;
-
+using System;
 
 [System.Serializable]
 public class GameData
@@ -19,9 +18,12 @@ public class GameData
         if (index != -1)
         {
             LevelData allreadyPassedLevelData = LevelStatus[index];
-            // TODO Check if allreadyPassedLevelData.CompletionTime is greater than levelData.CompletionTime
+            // Check if levelData.CompletionTime is less than allreadyPassedLevelData.CompletionTime
             // If so, replace ('cuz new one is better)
-            LevelStatus[index] = levelData;
+            if (String.Compare(levelData.CompletionTime, allreadyPassedLevelData.CompletionTime) < 0)
+            {
+                LevelStatus[index] = levelData;
+            }
             return;
         }
 
