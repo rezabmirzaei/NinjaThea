@@ -17,7 +17,7 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
-    private void Resume()
+    public void Resume()
     {
         Cursor.visible = false;
         pauseMenu.SetActive(false);
