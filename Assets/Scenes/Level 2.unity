@@ -1213,6 +1213,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 147286062, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Level 2
+      objectReference: {fileID: 0}
     - target: {fileID: 597149693, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
       propertyPath: m_Colors.m_NormalColor.b
       value: 0.5882353
@@ -1262,6 +1266,10 @@ PrefabInstance:
       value: LevelLoader, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 597149693, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Level 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1258476176, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: Level 3
       objectReference: {fileID: 0}
