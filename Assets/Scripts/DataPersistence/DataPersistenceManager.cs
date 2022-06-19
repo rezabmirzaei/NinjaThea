@@ -7,7 +7,7 @@ public class DataPersistenceManager : MonoBehaviour
 
     [SerializeField] private bool saveGameDataOnComplete;
 
-    private GameData gameData;
+    public GameData SaveGameData { get; private set; }
     private IDataPersister dataPersister;
 
     private void Awake()
@@ -18,13 +18,9 @@ public class DataPersistenceManager : MonoBehaviour
             return;
         }
         Instance = this;
-        DontDestroyOnLoad(gameObject);
-    }
-
-    private void Start()
-    {
         this.dataPersister = new FileDataPersister();
         LoadData();
+        DontDestroyOnLoad(gameObject);
     }
 
     public void SaveData(LevelData levelData)
@@ -34,20 +30,20 @@ public class DataPersistenceManager : MonoBehaviour
             Debug.LogWarning("Game not saved! Flag 'saveGameDataOnComplete is " + saveGameDataOnComplete);
             return;
         }
-        if (gameData == null)
+        if (SaveGameData == null)
         {
-            gameData = new GameData();
+            SaveGameData = new GameData();
         }
-        gameData.UpdateLevelStatus(levelData);
-        dataPersister.Save(gameData);
+        SaveGameData.UpdateLevelStatus(levelData);
+        dataPersister.Save(SaveGameData);
     }
 
     private void LoadData()
     {
-        gameData = dataPersister.Load();
-        if (gameData == null)
+        SaveGameData = dataPersister.Load();
+        if (SaveGameData == null)
         {
-            gameData = new GameData();
+            SaveGameData = new GameData();
         }
     }
 

@@ -11,7 +11,7 @@ public class Tutorial : MonoBehaviour
     {
         if (coll.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Tutorial...");
+            Debug.Log("Tutorial trigger...");
             // TODO Display tutorial UI (destroy on close)
         }
     }

@@ -26,6 +26,8 @@ public class GameController : MonoBehaviour
     [SerializeField] private AudioSource countdownStepsAudio;
     [SerializeField] private TextMeshProUGUI levelCompleteTimeText;
     [SerializeField] private TextMeshProUGUI tasksNotCompleteWarningText;
+    [SerializeField] private TextMeshProUGUI bestText;
+
 
     private int numTotalItems;
     private string itemName;
@@ -38,6 +40,7 @@ public class GameController : MonoBehaviour
     private float startTime;
     private float elapsedTime;
     private TimeSpan timePlaying;
+    private string currentSceneName;
 
     private void Awake()
     {
@@ -51,6 +54,8 @@ public class GameController : MonoBehaviour
 
     private void Start()
     {
+        currentSceneName = SceneManager.GetActiveScene().name;
+
         itemName = itemsContainer.transform.name;
         numTotalItems = itemsContainer.transform.childCount;
         numItemsCollected = 0;
@@ -62,6 +67,7 @@ public class GameController : MonoBehaviour
         enemyText.text = $"{enemyName}: {numdEnemiesKilled}/{numTotalEnemies}";
 
         timeText.text = "Time: 00:00.00";
+        SetBestText();
         countdownText.text = "";
 
         tasksCompleted = false;
@@ -118,6 +124,23 @@ public class GameController : MonoBehaviour
         backgroundMusic.gameObject.SetActive(true);
     }
 
+    private void SetBestText()
+    {
+        bestText.text = "Best: --";
+        GameData gameData = DataPersistenceManager.Instance.SaveGameData;
+        if (gameData == null || gameData.LevelStatus.Count == 0) return;
+
+        foreach (var levelStatus in gameData.LevelStatus)
+        {
+            if (levelStatus.LevelName.Equals(currentSceneName))
+            {
+                bestText.text = "Best: " + levelStatus.CompletionTime;
+                break;
+            }
+        }
+
+    }
+
     public void DisplayTasksNotCompleteWarningText()
     {
         tasksNotCompleteWarningText.gameObject.SetActive(true);
@@ -146,7 +169,7 @@ public class GameController : MonoBehaviour
     public void LevelComplete()
     {
         string completionTime = timePlaying.ToString("mm':'ss'.'ff");
-        LevelData levelData = new LevelData(SceneManager.GetActiveScene().name, completionTime);
+        LevelData levelData = new LevelData(currentSceneName, completionTime);
         DataPersistenceManager.Instance.SaveData(levelData);
         levelCompleteContainer.SetActive(true);
         Cursor.visible = true;

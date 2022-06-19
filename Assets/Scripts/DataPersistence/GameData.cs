@@ -32,7 +32,8 @@ public class GameData
 
     public override string ToString()
     {
-        return LevelStatus.ToString();
+        // TODO Make better!!
+        return "GameData: " + LevelStatus.Count;
     }
 
 }

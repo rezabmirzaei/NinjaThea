@@ -63,7 +63,7 @@ MonoBehaviour:
   countdownStepsAudio: {fileID: 825055189}
   levelCompleteTimeText: {fileID: 0}
   tasksNotCompleteWarningText: {fileID: 0}
-  saveGameDataOnComplete: 0
+  bestText: {fileID: 0}
 --- !u!82 &825055189
 AudioSource:
   m_ObjectHideFlags: 0
