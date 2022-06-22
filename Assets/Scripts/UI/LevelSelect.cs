@@ -9,8 +9,10 @@ public class LevelSelect : MonoBehaviour
 
     private void Start()
     {
+
         GameData gameData = DataPersistenceManager.Instance.SaveGameData;
         if (gameData == null || gameData.LevelStatus.Count == 0) return;
+
         foreach (var levelStatus in gameData.LevelStatus)
         {
             foreach (var levelButton in levelButtons)
@@ -20,9 +22,19 @@ public class LevelSelect : MonoBehaviour
                     StringComparison.OrdinalIgnoreCase))
                 {
                     levelButton.interactable = true;
+                    break;
                 }
             }
         }
+
+        foreach (var levelButton in levelButtons)
+        {
+            if (levelButton.interactable == false)
+            {
+                levelButton.gameObject.GetComponentInChildren<TextMeshProUGUI>().color = Color.gray;
+            }
+        }
+
     }
 
 }
