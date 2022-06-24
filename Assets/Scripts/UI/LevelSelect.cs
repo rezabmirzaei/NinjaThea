@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using System;
 
@@ -13,26 +14,31 @@ public class LevelSelect : MonoBehaviour
         GameData gameData = DataPersistenceManager.Instance.SaveGameData;
         if (gameData == null || gameData.LevelStatus.Count == 0) return;
 
-        foreach (var levelStatus in gameData.LevelStatus)
+        foreach (var levelButton in levelButtons)
         {
-            foreach (var levelButton in levelButtons)
+            bool levelAlreadyPlayed = false;
+            foreach (var levelStatus in gameData.LevelStatus)
             {
                 if (String.Equals(levelStatus.LevelName,
                     levelButton.gameObject.GetComponentInChildren<TextMeshProUGUI>().text,
                     StringComparison.OrdinalIgnoreCase))
                 {
-                    levelButton.interactable = true;
+                    levelAlreadyPlayed = true;
+                    levelButton.onClick.AddListener(delegate { ReplayLevel(levelStatus.LevelName); });
                     break;
                 }
             }
-        }
 
-        foreach (var levelButton in levelButtons)
-        {
-            if (levelButton.interactable == false)
+            // Level not played yet, gray out the text in button
+            if (!levelAlreadyPlayed)
             {
                 levelButton.gameObject.GetComponentInChildren<TextMeshProUGUI>().color = Color.gray;
             }
+        }
+
+        void ReplayLevel(string levelName)
+        {
+            SceneManager.LoadScene(levelName);
         }
 
     }
