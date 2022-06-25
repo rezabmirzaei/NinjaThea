@@ -1164,7 +1164,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.4400005, y: -2.39, z: -10}
+  m_LocalPosition: {x: -2.4400003, y: -2.39, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6389,7 +6389,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7777778, y: 1}
+    m_SensorSize: {x: 1.3333334, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -6406,7 +6406,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1789557500}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.4400005, y: -2.39, z: -10}
+  m_LocalPosition: {x: -2.4400003, y: -2.39, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6853,7 +6853,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 965956544817883185, guid: a8420c7c2017cab4c920004e0053025d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.867111
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 965956544817883185, guid: a8420c7c2017cab4c920004e0053025d, type: 3}
       propertyPath: m_LocalRotation.w
