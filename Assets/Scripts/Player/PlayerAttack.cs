@@ -6,7 +6,7 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Animator animator;
     [SerializeField] private Transform attackPoint;
-    [SerializeField] private float attackRange = .75f;
+    [SerializeField] private float attackRange = .8f;
     [SerializeField] private float attackRate = 4f;
     [SerializeField] private AudioSource attackSound;
     [SerializeField] private LayerMask enemyLayer;
