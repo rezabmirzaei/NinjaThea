@@ -13,7 +13,10 @@ public class PlayerLife : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Trap"))
+        bool isEnemy = collision.gameObject.CompareTag("Enemy");
+        if (isEnemy && collision.gameObject.GetComponent<Enemy>().IsDead()) return;
+
+        if (isEnemy || collision.gameObject.CompareTag("Trap"))
         {
             isDead = true;
             Die();
