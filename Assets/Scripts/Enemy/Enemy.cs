@@ -6,8 +6,17 @@ public class Enemy : MonoBehaviour
     [SerializeField] private Collider2D coll;
     [SerializeField] private AudioSource deathSound;
     [SerializeField] private LayerMask terrain;
+    [SerializeField] private bool idle;
 
     private bool isDead = false;
+
+    private void Start()
+    {
+        if (idle)
+        {
+            animator.SetTrigger("Idle");
+        }
+    }
 
     private void FixedUpdate()
     {
