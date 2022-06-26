@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 965956544817883185}
   - component: {fileID: 965956544817883184}
   - component: {fileID: 965956544817883191}
-  - component: {fileID: 965956544817883187}
+  - component: {fileID: 1608706895}
   - component: {fileID: 567053562}
   - component: {fileID: 965956544817883186}
   m_Layer: 10
@@ -108,8 +108,8 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!58 &965956544817883187
-CircleCollider2D:
+--- !u!61 &1608706895
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -121,9 +121,19 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.09026933}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.859375, y: 0.625}
+    newSize: {x: 0.859375, y: 0.625}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 0.42316544
+  m_Size: {x: 0.859375, y: 0.80553865}
+  m_EdgeRadius: 0
 --- !u!82 &567053562
 AudioSource:
   m_ObjectHideFlags: 0
@@ -233,7 +243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 965956544817883191}
-  coll: {fileID: 965956544817883187}
+  coll: {fileID: 1608706895}
   deathSound: {fileID: 567053562}
   terrain:
     serializedVersion: 2
