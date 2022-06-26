@@ -3,7 +3,6 @@ using UnityEngine;
 public class ItemCollector : MonoBehaviour
 {
 
-    // TODO Handle points/collected items
     [SerializeField] private AudioSource itemCollectedSound;
 
 
