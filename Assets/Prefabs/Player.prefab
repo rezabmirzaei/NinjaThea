@@ -643,7 +643,7 @@ MonoBehaviour:
   rb: {fileID: 3326274982575387166}
   animator: {fileID: 3326274982575387163}
   attackPoint: {fileID: 1600821070}
-  attackRange: 0.65
+  attackRange: 0.75
   attackRate: 4
   attackSound: {fileID: 3326274982872239317}
   enemyLayer:
