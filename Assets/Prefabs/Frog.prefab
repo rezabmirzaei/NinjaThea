@@ -118,7 +118,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -235,3 +235,6 @@ MonoBehaviour:
   animator: {fileID: 965956544817883191}
   coll: {fileID: 965956544817883187}
   deathSound: {fileID: 567053562}
+  terrain:
+    serializedVersion: 2
+    m_Bits: 128
