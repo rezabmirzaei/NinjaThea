@@ -6,44 +6,62 @@ public class Enemy : MonoBehaviour
     [SerializeField] private Collider2D coll;
     [SerializeField] private AudioSource deathSound;
     [SerializeField] private LayerMask terrain;
+
+    // Default behaviour is run - flip this in editor to change.
     [SerializeField] private bool idle;
 
-    private bool isDead = false;
+    // Default behaviour is facing right - flip this in editor to face left.
+    [SerializeField] private bool facingLeft;
+
+    private bool dead = false;
 
     private void Start()
     {
+        // Default behaviour is to start moving. Toggle idle in editor to keep anemy stationary.
         if (idle)
         {
             animator.SetTrigger("Idle");
         }
+        if (facingLeft)
+        {
+            transform.Rotate(new Vector3(0, 180, 0));
+        }
     }
 
-    private void FixedUpdate()
+    // TODO not neccessary atm. Thea doesn't want flying enemies. To hard to kill for her...
+    /* private void FixedUpdate()
     {
-        if (!isDead) return;
+        if (!dead) return;
         // Enemy is dead. Disable once on the ground (falling down)
-        if (isGrounded())
-        {
-            this.enabled = false;
-        }
-        transform.Translate(Vector2.down * 4.0f * Time.deltaTime, Space.World);
+        while (!isGrounded()) transform.Translate(Vector2.down * 4.0f * Time.deltaTime, Space.World);
     }
 
     private bool isGrounded()
     {
         return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, terrain);
-    }
+    } */
 
     public void Die()
     {
         deathSound.Play();
         GameController.Instance.EnemyKilled();
-        isDead = true;
+        dead = true;
         animator.SetTrigger("Death");
     }
 
     public bool IsDead()
     {
-        return isDead;
+        return dead;
     }
+
+    public bool IsIdle()
+    {
+        return idle;
+    }
+
+    public bool IsFacingLeft()
+    {
+        return facingLeft;
+    }
+
 }
