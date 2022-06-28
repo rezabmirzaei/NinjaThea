@@ -6,7 +6,7 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Animator animator;
     [SerializeField] private Transform attackPoint;
-    [SerializeField] private float attackRange = .8f;
+    [SerializeField] private float attackRange = .7f;
     [SerializeField] private float attackRate = 4f;
     [SerializeField] private AudioSource attackSound;
     [SerializeField] private LayerMask enemyLayer;
@@ -31,18 +31,13 @@ public class PlayerAttack : MonoBehaviour
     private void Attack()
     {
         attackSound.Play();
-        if (rb.velocity.y > .1f || rb.velocity.y < -.1f)
-        {
-            animator.SetTrigger("Attack Jump");
 
-        }
-        else
-        {
-            animator.SetTrigger("Attack");
+        Vector2 velocity = rb.velocity;
+        if (velocity.y > .1f || velocity.y < -.1f) animator.SetTrigger("Attack Jump");
+        else animator.SetTrigger("Attack");
 
-        }
-
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayer);
+        float range = velocity.x > 1f ? Mathf.Min(attackRange * rb.velocity.x, 1f) : attackRange;
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, range, enemyLayer);
 
         foreach (Collider2D enemyColl in hitEnemies)
         {
