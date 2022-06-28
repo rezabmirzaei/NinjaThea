@@ -36,7 +36,7 @@ public class PlayerAttack : MonoBehaviour
         if (velocity.y > .1f || velocity.y < -.1f) animator.SetTrigger("Attack Jump");
         else animator.SetTrigger("Attack");
 
-        float range = velocity.x > 1f ? Mathf.Min(attackRange * rb.velocity.x, 1f) : attackRange;
+        float range = velocity.x > 3f ? Mathf.Min(attackRange * rb.velocity.x, 1.8f) : attackRange;
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, range, enemyLayer);
 
         foreach (Collider2D enemyColl in hitEnemies)
