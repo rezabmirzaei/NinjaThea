@@ -6,6 +6,7 @@ public class Parallax : MonoBehaviour
     [SerializeField] private GameObject cam;
     [SerializeField] private float parallaxEffect;
     private float length, startPos;
+    private float defaultYPos = -2f;
 
     private void Start()
     {
@@ -18,7 +19,8 @@ public class Parallax : MonoBehaviour
         Vector3 camPosition = cam.transform.position;
         float temp = camPosition.x * (1 - parallaxEffect);
         float dist = camPosition.x * parallaxEffect;
-        float yPosition = camPosition.y <= -2.0f ? camPosition.y : -2.0f;
+        float yPosition = defaultYPos;
+        if (camPosition.y <= defaultYPos) yPosition += (camPosition.y - defaultYPos);
         transform.position = new Vector3(startPos + dist, yPosition, transform.position.z);
 
         if (temp > startPos + length) startPos += length;
