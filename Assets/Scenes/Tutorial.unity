@@ -1151,11 +1151,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5206124455903348401, guid: 368fb10e351dff24a82f31afed1ae157, type: 3}
       propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5206124455903348415, guid: 368fb10e351dff24a82f31afed1ae157, type: 3}
-      propertyPath: transitionTime
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 368fb10e351dff24a82f31afed1ae157, type: 3}
@@ -6693,6 +6689,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1121728420}
+    - target: {fileID: 1516768368, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8256643196293748516, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
       propertyPath: m_Name
       value: Overlay Canvas

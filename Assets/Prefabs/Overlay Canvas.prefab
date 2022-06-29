@@ -740,7 +740,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: QUIT
+  m_text: MAIN MENU
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b13d6e8af1fef174ca143e272f09c024, type: 2}
   m_sharedMaterial: {fileID: 7759721623890837852, guid: b13d6e8af1fef174ca143e272f09c024, type: 2}
@@ -1728,7 +1728,7 @@ GameObject:
   - component: {fileID: 1953316735}
   - component: {fileID: 1953316734}
   m_Layer: 5
-  m_Name: Quit Button (HUD)
+  m_Name: Main Menu Button (HUD)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1839,14 +1839,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 429818704}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: QuitGame
-        m_Mode: 1
+        m_MethodName: LoadScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Menu Scene
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &2108962883
