@@ -12,26 +12,17 @@ public class PlayerLife : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Trap"))
-        {
-            isDead = true;
-            Die();
-        }
+        if (collision.gameObject.CompareTag("Trap")) Die();
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.gameObject.CompareTag("Enemy"))
-        {
-            // Enemies may fall from sky once dead, don't injure player if so
-            if (collider.gameObject.GetComponent<Enemy>().IsDead()) return;
-            isDead = true;
-            Die();
-        }
+        if (collider.gameObject.CompareTag("Enemy")) Die();
     }
 
     private void Die()
     {
+        isDead = true;
         deathSound.Play();
         animator.SetTrigger("Death");
         rb.bodyType = RigidbodyType2D.Static;
