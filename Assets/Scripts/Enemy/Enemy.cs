@@ -46,6 +46,7 @@ public class Enemy : MonoBehaviour
         deathSound.Play();
         GameController.Instance.EnemyKilled();
         dead = true;
+        coll.enabled = false;
         animator.SetTrigger("Death");
     }
 
