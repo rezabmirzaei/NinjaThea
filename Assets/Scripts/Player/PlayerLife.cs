@@ -10,6 +10,11 @@ public class PlayerLife : MonoBehaviour
 
     private bool isDead = false;
 
+    private void Update()
+    {
+        if (!isDead && transform.position.y < -15) Die();
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Trap")) Die();
@@ -22,6 +27,7 @@ public class PlayerLife : MonoBehaviour
 
     private void Die()
     {
+        if (isDead) return;
         isDead = true;
         deathSound.Play();
         animator.SetTrigger("Death");
