@@ -18,7 +18,8 @@ public class FinishLine : MonoBehaviour
             {
                 isFinished = true;
                 finishLineCrossedSound.Play();
-                if (levelCompleteAchievementID != null) UserStatsHandler.Instance.PopAchievement(levelCompleteAchievementID);
+                if (UserStatsHandler.Instance != null && levelCompleteAchievementID != null)
+                    UserStatsHandler.Instance.PopAchievement(levelCompleteAchievementID);
                 GameController.Instance.LevelComplete();
             }
         }
