@@ -10,6 +10,7 @@ public class PauseMenu : MonoBehaviour
 
     private void Update()
     {
+        if (!GameController.Instance.gamePlaying) return;
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (isPaused) Resume();
