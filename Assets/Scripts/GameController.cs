@@ -127,6 +127,7 @@ public class GameController : MonoBehaviour
     private void SetBestText()
     {
         bestText.text = "Best: --";
+        if (DataPersistenceManager.Instance == null) return;
         GameData gameData = DataPersistenceManager.Instance.SaveGameData;
         if (gameData == null || gameData.LevelStatus.Count == 0) return;
 
@@ -170,7 +171,7 @@ public class GameController : MonoBehaviour
     {
         string completionTime = timePlaying.ToString("mm':'ss'.'ff");
         LevelData levelData = new LevelData(currentSceneName, completionTime);
-        DataPersistenceManager.Instance.SaveData(levelData);
+        if (DataPersistenceManager.Instance != null) DataPersistenceManager.Instance.SaveData(levelData);
         levelCompleteContainer.SetActive(true);
         Cursor.visible = true;
         // TODO Handle better in AudioManager
