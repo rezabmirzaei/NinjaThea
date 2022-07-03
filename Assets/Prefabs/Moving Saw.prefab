@@ -125,7 +125,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1903442202445911864, guid: 63d7ac7c51a5cc040b8df35f1e555a4b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 9.700275
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1903442202445911864, guid: 63d7ac7c51a5cc040b8df35f1e555a4b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -166,24 +166,3 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1903442202445911864, guid: 63d7ac7c51a5cc040b8df35f1e555a4b, type: 3}
   m_PrefabInstance: {fileID: 7208175288633684388}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &9107113685117363869 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1903442202445911865, guid: 63d7ac7c51a5cc040b8df35f1e555a4b, type: 3}
-  m_PrefabInstance: {fileID: 7208175288633684388}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &7208175288633684399
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9107113685117363869}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ee9169d00d30ae4db5a2086bbe34629, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waypoints:
-  - {fileID: 7208175289324623637}
-  - {fileID: 7208175288796717999}
-  speed: 2
