@@ -11,16 +11,17 @@ public class EnemyPatrol : MonoBehaviour
     [SerializeField] private float speed = 2;
     [SerializeField] private bool movingLeft;
 
+    private Enemy enemyScript;
     private Vector3 initScale;
 
     private void Awake()
     {
         initScale = enemy.localScale;
+        enemyScript = enemy.GetComponent<Enemy>();
     }
 
     private void FixedUpdate()
     {
-        Enemy enemyScript = enemy.GetComponent<Enemy>();
         if (!enemyScript.IsDead() && !enemyScript.IsIdle())
         {
             if (movingLeft)
@@ -38,7 +39,7 @@ public class EnemyPatrol : MonoBehaviour
 
     private void Patrol(int direction)
     {
-        enemy.localScale = new Vector3(Mathf.Abs(initScale.x) * direction, initScale.y, initScale.z);
+        enemy.localScale = new Vector3(Mathf.Abs(initScale.x) * (enemyScript.IsFacingLeft() ? -direction : direction), initScale.y, initScale.z);
         enemy.position = new Vector3(enemy.position.x + Time.deltaTime * direction * speed, enemy.position.y, enemy.position.z);
     }
 
