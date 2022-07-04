@@ -2603,6 +2603,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Black Mouse 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3063417926982736327, guid: c6c6b09fa241f8e499006f67414e2666, type: 3}
+      propertyPath: facingLeft
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6c6b09fa241f8e499006f67414e2666, type: 3}
 --- !u!4 &1159067613 stripped
