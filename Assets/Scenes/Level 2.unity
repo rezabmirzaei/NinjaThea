@@ -381,7 +381,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4509868596666571654, guid: a7034bc394b02d9409597efc00b3efb2, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4509868596666571654, guid: a7034bc394b02d9409597efc00b3efb2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -497,7 +497,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4509868596666571657, guid: a7034bc394b02d9409597efc00b3efb2, type: 3}
       propertyPath: m_Name
-      value: GameController
+      value: Game Controller
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7034bc394b02d9409597efc00b3efb2, type: 3}
@@ -557,7 +557,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7968934367263289825, guid: 455c9b78c15e2474c861c3378fa12439, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7968934367263289825, guid: 455c9b78c15e2474c861c3378fa12439, type: 3}
       propertyPath: m_AnchorMax.x
@@ -719,7 +719,7 @@ GameObject:
   - component: {fileID: 319405692}
   - component: {fileID: 319405693}
   m_Layer: 6
-  m_Name: Green Country BGf (2)
+  m_Name: Ice Mountains BGe (2)
   m_TagString: Background
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1565,7 +1565,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8256643196293748520, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8256643196293748520, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1894,7 +1894,7 @@ Transform:
   m_Children:
   - {fileID: 1725895917}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &631398094
 PrefabInstance:
@@ -2099,23 +2099,23 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 994892527}
     m_Modifications:
     - target: {fileID: 3063417926982736322, guid: c6c6b09fa241f8e499006f67414e2666, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3063417926982736322, guid: c6c6b09fa241f8e499006f67414e2666, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 83.882
+      value: 60.440434
       objectReference: {fileID: 0}
     - target: {fileID: 3063417926982736322, guid: c6c6b09fa241f8e499006f67414e2666, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.691
+      value: -10.993376
       objectReference: {fileID: 0}
     - target: {fileID: 3063417926982736322, guid: c6c6b09fa241f8e499006f67414e2666, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 4.867111
       objectReference: {fileID: 0}
     - target: {fileID: 3063417926982736322, guid: c6c6b09fa241f8e499006f67414e2666, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2159,6 +2159,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6c6b09fa241f8e499006f67414e2666, type: 3}
+--- !u!4 &692707120 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3063417926982736322, guid: c6c6b09fa241f8e499006f67414e2666, type: 3}
+  m_PrefabInstance: {fileID: 692707119}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &726411017
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2302,7 +2307,7 @@ GameObject:
   - component: {fileID: 750343847}
   - component: {fileID: 750343848}
   m_Layer: 6
-  m_Name: Green Country BGb (2)
+  m_Name: Ice Mountains BGb (2)
   m_TagString: Background
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2386,7 +2391,7 @@ GameObject:
   - component: {fileID: 752174665}
   - component: {fileID: 752174666}
   m_Layer: 6
-  m_Name: Green Country BGf (1)
+  m_Name: Ice Mountains BGe (1)
   m_TagString: Background
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2664,7 +2669,7 @@ Transform:
   - {fileID: 22087853}
   - {fileID: 179991667}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &855443284
 PrefabInstance:
@@ -2904,6 +2909,7 @@ Transform:
   m_Children:
   - {fileID: 680300720}
   - {fileID: 1725707193}
+  - {fileID: 692707120}
   m_Father: {fileID: 1664769945}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2918,7 +2924,7 @@ GameObject:
   - component: {fileID: 1015142889}
   - component: {fileID: 1015142890}
   m_Layer: 6
-  m_Name: Green Country BGa
+  m_Name: Ice Mountains BGa
   m_TagString: Background
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3138,7 +3144,7 @@ GameObject:
   - component: {fileID: 1193403015}
   - component: {fileID: 1193403014}
   m_Layer: 6
-  m_Name: Green Country BGf
+  m_Name: Ice Mountains BGe
   m_TagString: Background
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3994,7 +4000,7 @@ Transform:
   - {fileID: 994892527}
   - {fileID: 1849107634}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1698385230
 GameObject:
@@ -4042,7 +4048,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1698385234
 MonoBehaviour:
@@ -8032,7 +8038,7 @@ Transform:
   m_Children:
   - {fileID: 486489989}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1849107633
 GameObject:
@@ -8097,7 +8103,7 @@ Transform:
   m_Children:
   - {fileID: 1173918019}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1876491942
 GameObject:
@@ -8130,7 +8136,7 @@ Transform:
   - {fileID: 476826899}
   - {fileID: 1240584207}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1894838166
 PrefabInstance:
@@ -8205,7 +8211,7 @@ GameObject:
   - component: {fileID: 1922948909}
   - component: {fileID: 1922948910}
   m_Layer: 6
-  m_Name: Green Country BGb (1)
+  m_Name: Ice Mountains BGb (1)
   m_TagString: Background
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8356,7 +8362,7 @@ GameObject:
   - component: {fileID: 1962684468}
   - component: {fileID: 1962684467}
   m_Layer: 6
-  m_Name: Green Country BGb
+  m_Name: Ice Mountains BGb
   m_TagString: Background
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

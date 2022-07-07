@@ -310,7 +310,7 @@ GameObject:
   - component: {fileID: 59054810}
   - component: {fileID: 59054811}
   m_Layer: 6
-  m_Name: Green Country BGb (1)
+  m_Name: Red Plains BGb (1)
   m_TagString: Background
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -394,7 +394,7 @@ GameObject:
   - component: {fileID: 205803727}
   - component: {fileID: 205803728}
   m_Layer: 6
-  m_Name: Green Country BGb (2)
+  m_Name: Red Plains BGb (2)
   m_TagString: Background
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -531,7 +531,7 @@ Transform:
   - {fileID: 236906573}
   - {fileID: 12788338}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &297728798
 PrefabInstance:
@@ -1037,7 +1037,7 @@ GameObject:
   - component: {fileID: 492979595}
   - component: {fileID: 492979596}
   m_Layer: 6
-  m_Name: Green Country BGf (2)
+  m_Name: Red Plains BGd (2)
   m_TagString: Background
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1364,7 +1364,7 @@ Transform:
   m_Children:
   - {fileID: 1725895917}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &706428880 stripped
 MonoBehaviour:
@@ -1419,7 +1419,7 @@ Transform:
   - {fileID: 1808229371}
   - {fileID: 1260624012}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &844264707
 GameObject:
@@ -1564,7 +1564,7 @@ GameObject:
   - component: {fileID: 984885598}
   - component: {fileID: 984885597}
   m_Layer: 6
-  m_Name: Green Country BGf
+  m_Name: Red Plains BGd
   m_TagString: Background
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1662,7 +1662,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6266125489989344204, guid: 084a08014a2008e4fa2e3ce3484faf3b, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6266125489989344204, guid: 084a08014a2008e4fa2e3ce3484faf3b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1739,7 +1739,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2709613246534233125, guid: 8562046f23b75e1449cc071e7727089d, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2709613246534233125, guid: 8562046f23b75e1449cc071e7727089d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1936,7 +1936,7 @@ GameObject:
   - component: {fileID: 1210007315}
   - component: {fileID: 1210007316}
   m_Layer: 6
-  m_Name: Green Country BGa
+  m_Name: Red Plains BGa
   m_TagString: Background
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2404,7 +2404,7 @@ GameObject:
   - component: {fileID: 1400515290}
   - component: {fileID: 1400515289}
   m_Layer: 6
-  m_Name: Green Country BGb
+  m_Name: Red Plains BGb
   m_TagString: Background
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2668,7 +2668,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1698385234
 MonoBehaviour:
@@ -5795,7 +5795,7 @@ Transform:
   m_Children:
   - {fileID: 844264708}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1876491942
 GameObject:
@@ -5828,7 +5828,7 @@ Transform:
   - {fileID: 447466929}
   - {fileID: 1809482161}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1888753505
 GameObject:
@@ -5841,7 +5841,7 @@ GameObject:
   - component: {fileID: 1888753506}
   - component: {fileID: 1888753507}
   m_Layer: 6
-  m_Name: Green Country BGf (1)
+  m_Name: Red Plains BGd (1)
   m_TagString: Background
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5914,37 +5914,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1894310504
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1894310506}
-  m_Layer: 0
-  m_Name: Audio Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1894310506
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1894310504}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2027298070
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6035,7 +6004,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3326274982575387161, guid: dc4cc4f1aa85847458c845c61337d4e7, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3326274982575387161, guid: dc4cc4f1aa85847458c845c61337d4e7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6088,7 +6057,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4509868596666571654, guid: a7034bc394b02d9409597efc00b3efb2, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4509868596666571654, guid: a7034bc394b02d9409597efc00b3efb2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6221,7 +6190,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7968934367263289825, guid: 455c9b78c15e2474c861c3378fa12439, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7968934367263289825, guid: 455c9b78c15e2474c861c3378fa12439, type: 3}
       propertyPath: m_AnchorMax.x
@@ -6342,7 +6311,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8256643196293748520, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8256643196293748520, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
       propertyPath: m_AnchorMax.x
