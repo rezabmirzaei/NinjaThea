@@ -821,7 +821,7 @@ GameObject:
   - component: {fileID: 792555332}
   - component: {fileID: 792555331}
   m_Layer: 5
-  m_Name: Level Complete Text (2)
+  m_Name: Level Complete Text 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -875,7 +875,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Now on to the next challange!
+  m_text: Now on to the next challenge!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b13d6e8af1fef174ca143e272f09c024, type: 2}
   m_sharedMaterial: {fileID: 7759721623890837852, guid: b13d6e8af1fef174ca143e272f09c024, type: 2}
@@ -956,7 +956,7 @@ GameObject:
   - component: {fileID: 922230028}
   - component: {fileID: 922230027}
   m_Layer: 5
-  m_Name: Level Complete Text (1)
+  m_Name: Level Complete Text 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1010,7 +1010,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'You''ve defeated all the enemies and collected all the fruit. '
+  m_text: 'You''ve defeated the critters and collected all the fruit. '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b13d6e8af1fef174ca143e272f09c024, type: 2}
   m_sharedMaterial: {fileID: 7759721623890837852, guid: b13d6e8af1fef174ca143e272f09c024, type: 2}
