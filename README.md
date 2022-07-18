@@ -6,7 +6,7 @@ A simple Unity 2D platformer for my 4 year old daughter. Mischievous critters ha
 
 Pixel art courtesy of:
 
-* [seethingswarm](https://seethingswarm.itch.io/) - NinjaThea, all critters (mouse, frog, crow etc.)
+* [seethingswarm](https://seethingswarm.itch.io/) - NinjaThea, all critters
 * [Arludus](https://arludus.itch.io/) - Backgrounds
 * [Pixel Frog](https://pixelfrog-assets.itch.io/) - Tilemap, traps and platforms
 
