@@ -12,10 +12,18 @@ public class LevelSelect : MonoBehaviour
     {
 
         GameData gameData = DataPersistenceManager.Instance.SaveGameData;
-        if (gameData == null || gameData.LevelStatus.Count == 0) return;
+        Boolean noGameData = gameData == null || gameData.LevelStatus.Count == 0;
 
         foreach (var levelButton in levelButtons)
         {
+
+            if (noGameData)
+            {
+                // No game data, gray out button
+                levelButton.gameObject.GetComponentInChildren<TextMeshProUGUI>().color = Color.gray;
+                continue;
+            }
+
             bool levelAlreadyPlayed = false;
             foreach (var levelStatus in gameData.LevelStatus)
             {
