@@ -6,7 +6,7 @@ using System;
 
 public class LevelSelect : MonoBehaviour
 {
-    [SerializeField] private Button[] levelButtons;
+    [SerializeField] private Button[] stageButtons;
 
     private void Start()
     {
@@ -14,8 +14,10 @@ public class LevelSelect : MonoBehaviour
         GameData gameData = DataPersistenceManager.Instance.SaveGameData;
         Boolean noGameData = gameData == null || gameData.LevelStatus.Count == 0;
 
-        foreach (var levelButton in levelButtons)
+        /*foreach (var levelButton in levelButtons)*/
+        for (int i = 0; i < stageButtons.Length; i++)
         {
+            Button levelButton = stageButtons[i];
 
             if (noGameData)
             {
@@ -24,29 +26,30 @@ public class LevelSelect : MonoBehaviour
                 continue;
             }
 
-            bool levelAlreadyPlayed = false;
+            bool stageAlreadyPlayed = false;
             foreach (var levelStatus in gameData.LevelStatus)
             {
                 if (String.Equals(levelStatus.LevelName,
                     levelButton.gameObject.GetComponentInChildren<TextMeshProUGUI>().text,
                     StringComparison.OrdinalIgnoreCase))
                 {
-                    levelAlreadyPlayed = true;
-                    levelButton.onClick.AddListener(delegate { ReplayLevel(levelStatus.LevelName); });
+                    stageAlreadyPlayed = true;
+                    levelButton.onClick.AddListener(delegate { ReplayStage(levelStatus.StageIndex); });
                     break;
                 }
             }
 
             // Level not played yet, gray out the text in button
-            if (!levelAlreadyPlayed)
+            if (!stageAlreadyPlayed)
             {
                 levelButton.gameObject.GetComponentInChildren<TextMeshProUGUI>().color = Color.gray;
             }
+
         }
 
-        void ReplayLevel(string levelName)
+        void ReplayStage(int stageIndex)
         {
-            SceneManager.LoadScene(levelName);
+            SceneManager.LoadScene(stageIndex);
         }
 
     }

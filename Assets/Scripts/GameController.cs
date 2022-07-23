@@ -43,6 +43,7 @@ public class GameController : MonoBehaviour
     private float elapsedTime;
     private TimeSpan timePlaying;
     private string currentSceneName;
+    private int currentSceneIndex;
 
     private void Awake()
     {
@@ -57,6 +58,7 @@ public class GameController : MonoBehaviour
     private void Start()
     {
         currentSceneName = SceneManager.GetActiveScene().name;
+        currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
 
         itemName = itemsContainer.transform.name;
         numTotalItems = itemsContainer.transform.childCount;
@@ -177,7 +179,7 @@ public class GameController : MonoBehaviour
     public void LevelComplete()
     {
         string completionTime = timePlaying.ToString("mm':'ss'.'ff");
-        LevelData levelData = new LevelData(currentSceneName, completionTime);
+        LevelData levelData = new LevelData(currentSceneName, completionTime, currentSceneIndex);
         if (DataPersistenceManager.Instance != null) DataPersistenceManager.Instance.SaveData(levelData);
         levelCompleteContainer.SetActive(true);
         Cursor.visible = true;

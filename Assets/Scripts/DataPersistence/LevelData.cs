@@ -5,11 +5,14 @@ public class LevelData
 {
     public string LevelName;
     public string CompletionTime;
+    public int StageIndex;
 
-    public LevelData(string levelName, string completionTime)
+    public LevelData(string levelName, string completionTime, int stageIndex)
     {
         LevelName = levelName;
         CompletionTime = completionTime;
+        StageIndex = stageIndex;
+
     }
 
     public override int GetHashCode()

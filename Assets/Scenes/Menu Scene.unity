@@ -1815,7 +1815,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6368ec5c45a36714ea7877579349b888, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelButtons:
+  stageButtons:
   - {fileID: 1154487042}
   - {fileID: 622508871}
   - {fileID: 468202728}
@@ -4944,7 +4944,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 2, y: 125}
-  m_SizeDelta: {x: 1429.7892, y: 181.6692}
+  m_SizeDelta: {x: 1556.9467, y: 181.6692}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2078537185
 MonoBehaviour:
@@ -4966,7 +4966,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Replay any level you've already completed for another go.
+  m_text: Continue where you left off or replay any level you've already completed
+    for another go.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b13d6e8af1fef174ca143e272f09c024, type: 2}
   m_sharedMaterial: {fileID: 7759721623890837852, guid: b13d6e8af1fef174ca143e272f09c024, type: 2}
