@@ -27,6 +27,8 @@ public class GameController : MonoBehaviour
     [SerializeField] private TextMeshProUGUI levelCompleteTimeText;
     [SerializeField] private TextMeshProUGUI tasksNotCompleteWarningText;
     [SerializeField] private TextMeshProUGUI bestText;
+    [SerializeField] private TextMeshProUGUI stageText;
+    [SerializeField] private String customStageText;
 
 
     private int numTotalItems;
@@ -69,6 +71,11 @@ public class GameController : MonoBehaviour
         timeText.text = "Time: 00:00.00";
         SetBestText();
         countdownText.text = "";
+
+        if (string.IsNullOrEmpty(customStageText))
+            stageText.text = SceneManager.GetActiveScene().name;
+        else
+            stageText.text = customStageText;
 
         tasksCompleted = false;
         gamePlaying = false;

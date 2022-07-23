@@ -64,6 +64,8 @@ MonoBehaviour:
   levelCompleteTimeText: {fileID: 0}
   tasksNotCompleteWarningText: {fileID: 0}
   bestText: {fileID: 0}
+  stageText: {fileID: 0}
+  customStageText: 
 --- !u!82 &825055189
 AudioSource:
   m_ObjectHideFlags: 0
