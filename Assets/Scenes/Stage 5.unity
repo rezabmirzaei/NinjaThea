@@ -9130,6 +9130,14 @@ PrefabInstance:
       value: End Scene
       objectReference: {fileID: 0}
     - target: {fileID: 1258476176, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1121728420}
+    - target: {fileID: 1258476176, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadNextStage
+      objectReference: {fileID: 0}
+    - target: {fileID: 1258476176, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: Level 5
       objectReference: {fileID: 0}

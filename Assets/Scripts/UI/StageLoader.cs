@@ -8,17 +8,22 @@ public class StageLoader : MonoBehaviour
     [SerializeField] private Animator crossfadeAnimator;
     [SerializeField] private float transitionTime = 2f;
 
-    public void LoadLevel(string levelName)
+    public void LoadNextStage()
     {
-        StartCoroutine(LoadLevelByName(levelName));
+        StartCoroutine(LoadNextStageByIndex(SceneManager.GetActiveScene().buildIndex + 1));
     }
 
-    IEnumerator LoadLevelByName(string levelName)
+    public void LoadStageByIndex(int sceneIndex)
+    {
+        StartCoroutine(LoadNextStageByIndex(sceneIndex));
+    }
+
+    IEnumerator LoadNextStageByIndex(int sceneIndex)
     {
         crossfadeAnimator.SetTrigger("Crossfade");
 
         yield return new WaitForSeconds(transitionTime);
 
-        SceneManager.LoadScene(levelName);
+        SceneManager.LoadScene(sceneIndex);
     }
 }
