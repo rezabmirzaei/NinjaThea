@@ -14,37 +14,46 @@ public class LevelSelect : MonoBehaviour
         GameData gameData = DataPersistenceManager.Instance.SaveGameData;
         Boolean noGameData = gameData == null || gameData.LevelStatus.Count == 0;
 
-        /*foreach (var levelButton in levelButtons)*/
-        for (int i = 0; i < stageButtons.Length; i++)
+        int lastStagePlayedIndex = 0;
+        foreach (var stageButton in stageButtons)
         {
-            Button levelButton = stageButtons[i];
 
             if (noGameData)
             {
                 // No game data, gray out button
-                levelButton.gameObject.GetComponentInChildren<TextMeshProUGUI>().color = Color.gray;
+                stageButton.gameObject.GetComponentInChildren<TextMeshProUGUI>().color = Color.gray;
                 continue;
             }
 
+            // Check if stage played and enable button for selection
             bool stageAlreadyPlayed = false;
             foreach (var levelStatus in gameData.LevelStatus)
             {
                 if (String.Equals(levelStatus.LevelName,
-                    levelButton.gameObject.GetComponentInChildren<TextMeshProUGUI>().text,
+                    stageButton.gameObject.GetComponentInChildren<TextMeshProUGUI>().text,
                     StringComparison.OrdinalIgnoreCase))
                 {
+                    lastStagePlayedIndex++;
                     stageAlreadyPlayed = true;
-                    levelButton.onClick.AddListener(delegate { ReplayStage(levelStatus.StageIndex); });
+                    stageButton.onClick.AddListener(delegate { ReplayStage(levelStatus.StageIndex); });
                     break;
                 }
             }
 
-            // Level not played yet, gray out the text in button
+            // Stage not played yet, gray out the text in button
             if (!stageAlreadyPlayed)
             {
-                levelButton.gameObject.GetComponentInChildren<TextMeshProUGUI>().color = Color.gray;
+                stageButton.gameObject.GetComponentInChildren<TextMeshProUGUI>().color = Color.gray;
             }
 
+        }
+
+        // Add next stage, after last finished stage (a sort of continue)
+        if (lastStagePlayedIndex < stageButtons.Length)
+        {
+            Button continueStageButton = stageButtons[lastStagePlayedIndex];
+            continueStageButton.gameObject.GetComponentInChildren<TextMeshProUGUI>().color = Color.black;
+            continueStageButton.onClick.AddListener(delegate { ReplayStage(lastStagePlayedIndex + 1); });
         }
 
         void ReplayStage(int stageIndex)
