@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using System;
 
-public class LevelSelect : MonoBehaviour
+public class StageSelect : MonoBehaviour
 {
     [SerializeField] private Button[] stageButtons;
 

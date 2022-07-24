@@ -2770,7 +2770,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5206124455903348401, guid: 368fb10e351dff24a82f31afed1ae157, type: 3}
       propertyPath: m_Name
-      value: Level Loader
+      value: Stage Loader
       objectReference: {fileID: 0}
     - target: {fileID: 5206124455903348401, guid: 368fb10e351dff24a82f31afed1ae157, type: 3}
       propertyPath: m_IsActive
