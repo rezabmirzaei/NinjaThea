@@ -20,15 +20,18 @@ public class GameController : MonoBehaviour
     [SerializeField] private GameObject hudContainer;
     [SerializeField] private GameObject levelCompleteContainer;
     [SerializeField] private TextMeshProUGUI timeText;
-    [SerializeField] private TextMeshProUGUI countdownText;
-    [SerializeField] private string[] countdownSteps;
-    // TODO Rethink this. Doen Unity handle tuples? > E.g. use together with countdownSteps, each step has own audio.
-    [SerializeField] private AudioSource countdownStepsAudio;
     [SerializeField] private TextMeshProUGUI levelCompleteTimeText;
     [SerializeField] private TextMeshProUGUI tasksNotCompleteWarningText;
     [SerializeField] private TextMeshProUGUI bestText;
     [SerializeField] private TextMeshProUGUI stageText;
     [SerializeField] private String customStageText;
+
+    [Header("Countdown")]
+    [SerializeField] private TextMeshProUGUI countdownText;
+    // Oh dear... these two have to match.
+    // The string countdown step must have the corresponding audio clip in another array, with the same index
+    [SerializeField] private string[] countdownSteps;
+    [SerializeField] private AudioSource[] countdownStepsAudio;
 
 
     private int numTotalItems;
@@ -105,18 +108,18 @@ public class GameController : MonoBehaviour
     IEnumerator CountdownToBeginGame()
     {
 
-        int iterations = 0;
-        foreach (string step in countdownSteps)
+        for (int i = 0; i < countdownSteps.Length; i++)
         {
-            iterations++;
-            if (iterations == countdownSteps.Length)
+            string step = countdownSteps[i];
+            AudioSource audio = countdownStepsAudio[i];
+            if (i == countdownSteps.Length - 1)
             {
                 countdownText.fontSize = 168;
                 countdownText.fontStyle = FontStyles.Italic | FontStyles.Bold;
                 BeginGame();
             }
             countdownText.text = step;
-            countdownStepsAudio.Play();
+            audio.Play();
             yield return new WaitForSeconds(1f);
         }
 
