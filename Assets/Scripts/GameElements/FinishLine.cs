@@ -6,6 +6,8 @@ public class FinishLine : MonoBehaviour
 
     [SerializeField] private AudioSource finishLineCrossedSound;
     [SerializeField] private string levelCompleteAchievementID;
+    [SerializeField] private bool isFinalStage;
+
 
     private bool isFinished = false;
 
@@ -18,9 +20,13 @@ public class FinishLine : MonoBehaviour
             {
                 isFinished = true;
                 finishLineCrossedSound.Play();
+
                 if (UserStatsHandler.Instance != null && levelCompleteAchievementID != null)
                     UserStatsHandler.Instance.PopAchievement(levelCompleteAchievementID);
-                GameController.Instance.LevelComplete();
+
+                if (!isFinalStage) GameController.Instance.StageComplete();
+                else GameController.Instance.StageComplete();
+
             }
         }
         else

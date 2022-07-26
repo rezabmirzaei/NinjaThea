@@ -3177,6 +3177,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2709613246534233120, guid: 8562046f23b75e1449cc071e7727089d, type: 3}
+      propertyPath: isFinalStage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2709613246534233120, guid: 8562046f23b75e1449cc071e7727089d, type: 3}
       propertyPath: levelCompleteAchievementID
       value: ACH_STAGE_8_CLEARED
       objectReference: {fileID: 0}

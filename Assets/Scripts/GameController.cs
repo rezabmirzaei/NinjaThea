@@ -29,10 +29,9 @@ public class GameController : MonoBehaviour
     [Header("Countdown")]
     [SerializeField] private TextMeshProUGUI countdownText;
     // Oh dear... these two have to match.
-    // The string countdown step must have the corresponding audio clip in another array, with the same index
+    // The string countdown step must have the corresponding audio clip in another array, with the same index.
     [SerializeField] private string[] countdownSteps;
     [SerializeField] private AudioSource[] countdownStepsAudio;
-
 
     private int numTotalItems;
     private string itemName;
@@ -47,6 +46,7 @@ public class GameController : MonoBehaviour
     private TimeSpan timePlaying;
     private string currentSceneName;
     private int currentSceneIndex;
+    private int secondsToWaitBeforeLoadNextStage = 5;
 
     private void Awake()
     {
@@ -179,14 +179,36 @@ public class GameController : MonoBehaviour
         tasksCompleted = (numItemsCollected >= numTotalItems) && (numdEnemiesKilled >= numTotalEnemies);
     }
 
-    public void LevelComplete()
+    public void StageComplete()
+    {
+        ManageStageCompleted();
+        StartCoroutine(LoadNextLevel());
+    }
+
+    IEnumerator LoadNextLevel()
+    {
+        for (int i = secondsToWaitBeforeLoadNextStage; i >= 0; i--)
+        {
+            Debug.Log("Loading next stage in " + i + " seconds.");
+            yield return new WaitForSeconds(1f);
+        }
+        StageLoader.Instance.LoadNextStage();
+    }
+
+    public void GameComplete()
+    {
+        // TODO Implement
+        ManageStageCompleted();
+        Debug.Log("Game Completed!!");
+    }
+
+    private void ManageStageCompleted()
     {
         string completionTime = timePlaying.ToString("mm':'ss'.'ff");
         LevelData levelData = new LevelData(currentSceneName, completionTime, currentSceneIndex);
         if (DataPersistenceManager.Instance != null) DataPersistenceManager.Instance.SaveData(levelData);
         levelCompleteContainer.SetActive(true);
         Cursor.visible = true;
-        // TODO Handle better in AudioManager
         backgroundMusic.gameObject.SetActive(false);
         gamePlaying = false;
         levelCompleteTimeText.text = "Time: " + completionTime;

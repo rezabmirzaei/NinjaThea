@@ -5,8 +5,21 @@ using UnityEngine.SceneManagement;
 public class StageLoader : MonoBehaviour
 {
 
+    public static StageLoader Instance;
+
     [SerializeField] private Animator crossfadeAnimator;
     [SerializeField] private float transitionTime = 2f;
+
+    private void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        Instance = this;
+    }
+
 
     public void LoadNextStage()
     {
