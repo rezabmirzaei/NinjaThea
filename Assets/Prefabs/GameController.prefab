@@ -71,6 +71,7 @@ MonoBehaviour:
   - {fileID: 825055189}
   - {fileID: 1624373789}
   - {fileID: 1624373790}
+  countdownStepsAudioFull: {fileID: 0}
 --- !u!82 &825055189
 AudioSource:
   m_ObjectHideFlags: 0
@@ -81,7 +82,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 7f1121abff0e40d42993ec8263ada39a, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 5cb5fb45d5445ab43958194bffe9b491, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.8
   m_Pitch: 1
@@ -177,7 +178,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 908d91662a1d3f34fb9ef26131453617, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 25b9753d21fb4434cb3d9a24fd4597c5, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.8
   m_Pitch: 1
@@ -273,7 +274,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 1f11ff5ab4b5af942bbdc975e45a8086, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 34f7db95efedaca47aca7026e709295d, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.8
   m_Pitch: 1
