@@ -941,7 +941,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.5380003, y: -2.428, z: -10}
+  m_LocalPosition: {x: -2.5380006, y: -2.428, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6718,7 +6718,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.3333334, y: 1}
+    m_SensorSize: {x: 1.7777778, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -6735,7 +6735,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1789557500}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.5380003, y: -2.428, z: -10}
+  m_LocalPosition: {x: -2.5380006, y: -2.428, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7195,6 +7195,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 236906572}
     - target: {fileID: 4509868596666571655, guid: a7034bc394b02d9409597efc00b3efb2, type: 3}
+      propertyPath: loadingNextStageText
+      value: 
+      objectReference: {fileID: 8256643196118948323}
+    - target: {fileID: 4509868596666571655, guid: a7034bc394b02d9409597efc00b3efb2, type: 3}
       propertyPath: levelCompleteTimeText
       value: 
       objectReference: {fileID: 1266733416}
@@ -7489,6 +7493,17 @@ MonoBehaviour:
 --- !u!114 &8256643196118948322 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1851573529, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
+  m_PrefabInstance: {fileID: 8256643196118948320}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8256643196118948323 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 860494647, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
   m_PrefabInstance: {fileID: 8256643196118948320}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}

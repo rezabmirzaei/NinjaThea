@@ -24,6 +24,7 @@ public class GameController : MonoBehaviour
     [SerializeField] private TextMeshProUGUI tasksNotCompleteWarningText;
     [SerializeField] private TextMeshProUGUI bestText;
     [SerializeField] private TextMeshProUGUI stageText;
+    [SerializeField] private TextMeshProUGUI loadingNextStageText;
     [SerializeField] private String customStageText;
 
     [Header("Countdown")]
@@ -76,6 +77,7 @@ public class GameController : MonoBehaviour
         timeText.text = "Time: 00:00.00";
         SetBestText();
         countdownText.text = "";
+        loadingNextStageText.text = "";
 
         if (string.IsNullOrEmpty(customStageText))
             stageText.text = SceneManager.GetActiveScene().name;
@@ -189,7 +191,7 @@ public class GameController : MonoBehaviour
     {
         for (int i = secondsToWaitBeforeLoadNextStage; i >= 0; i--)
         {
-            Debug.Log("Loading next stage in " + i + " seconds.");
+            loadingNextStageText.text = "Loading next stage in " + i + "...";
             yield return new WaitForSeconds(1f);
         }
         StageLoader.Instance.LoadNextStage();

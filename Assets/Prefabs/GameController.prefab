@@ -61,6 +61,7 @@ MonoBehaviour:
   tasksNotCompleteWarningText: {fileID: 0}
   bestText: {fileID: 0}
   stageText: {fileID: 0}
+  loadingNextStageText: {fileID: 0}
   customStageText: 
   countdownText: {fileID: 0}
   countdownSteps:
@@ -71,7 +72,6 @@ MonoBehaviour:
   - {fileID: 825055189}
   - {fileID: 1624373789}
   - {fileID: 1624373790}
-  countdownStepsAudioFull: {fileID: 0}
 --- !u!82 &825055189
 AudioSource:
   m_ObjectHideFlags: 0
