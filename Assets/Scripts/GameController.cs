@@ -47,7 +47,7 @@ public class GameController : MonoBehaviour
     private TimeSpan timePlaying;
     private string currentSceneName;
     private int currentSceneIndex;
-    private int secondsToWaitBeforeLoadNextStage = 5;
+    private int secondsToWaitBeforeLoadNextStage = 10;
 
     private void Awake()
     {

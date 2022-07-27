@@ -9280,10 +9280,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 860494646, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 547.7682
+      objectReference: {fileID: 0}
+    - target: {fileID: 860494647, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1258476176, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1121728420}
+    - target: {fileID: 1516768368, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8256643196293748516, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
       propertyPath: m_Name
       value: Overlay Canvas
