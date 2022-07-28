@@ -1,4 +1,3 @@
-using Steamworks;
 using UnityEngine;
 
 public class FinishLine : MonoBehaviour
@@ -7,7 +6,6 @@ public class FinishLine : MonoBehaviour
     [SerializeField] private AudioSource finishLineCrossedSound;
     [SerializeField] private string levelCompleteAchievementID;
     [SerializeField] private bool isFinalStage;
-
 
     private bool isFinished = false;
 
@@ -25,7 +23,7 @@ public class FinishLine : MonoBehaviour
                     UserStatsHandler.Instance.PopAchievement(levelCompleteAchievementID);
 
                 if (!isFinalStage) GameController.Instance.StageComplete();
-                else GameController.Instance.StageComplete();
+                else GameController.Instance.GameComplete();
 
             }
         }
@@ -34,6 +32,11 @@ public class FinishLine : MonoBehaviour
             GameController.Instance.DisplayTasksNotCompleteWarningText();
         }
 
+    }
+
+    public bool IsFinalStage()
+    {
+        return isFinalStage;
     }
 
 }

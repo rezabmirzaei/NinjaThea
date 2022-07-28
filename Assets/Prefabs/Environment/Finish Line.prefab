@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2709613246534233120}
   m_Layer: 8
   m_Name: Finish Line
-  m_TagString: Finishline
+  m_TagString: Finish Line
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -244,3 +244,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   finishLineCrossedSound: {fileID: 2709613246534233127}
   levelCompleteAchievementID: ACH_STAGE_1_CLEARED
+  isFinalStage: 0

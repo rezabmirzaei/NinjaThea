@@ -184,6 +184,7 @@ public class GameController : MonoBehaviour
     public void StageComplete()
     {
         ManageStageCompleted();
+        levelCompleteContainer.SetActive(true);
         StartCoroutine(LoadNextLevel());
     }
 
@@ -209,7 +210,6 @@ public class GameController : MonoBehaviour
         string completionTime = timePlaying.ToString("mm':'ss'.'ff");
         LevelData levelData = new LevelData(currentSceneName, completionTime, currentSceneIndex);
         if (DataPersistenceManager.Instance != null) DataPersistenceManager.Instance.SaveData(levelData);
-        levelCompleteContainer.SetActive(true);
         Cursor.visible = true;
         backgroundMusic.gameObject.SetActive(false);
         gamePlaying = false;

@@ -6,11 +6,11 @@ TagManager:
   tags:
   - Trap
   - Platform
-  - Finishline
   - Collectible
   - UI
   - Enemy
   - Background
+  - Finish Line
   layers:
   - Default
   - TransparentFX
