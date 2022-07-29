@@ -12,6 +12,6 @@ public class PanelDefaultButtonHighlighter : MonoBehaviour
 
     public void HighlightDefaultButton()
     {
-        defaultHighlightedButton.Select();
+        if (defaultHighlightedButton) defaultHighlightedButton.Select();
     }
 }
