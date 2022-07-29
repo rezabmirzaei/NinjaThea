@@ -18,7 +18,8 @@ public class GameController : MonoBehaviour
     [SerializeField] private GameObject enemiesContainer;
     [SerializeField] private TextMeshProUGUI enemyText;
     [SerializeField] private GameObject hudContainer;
-    [SerializeField] private GameObject levelCompleteContainer;
+    [SerializeField] private GameObject stageCompleteContainer;
+    [SerializeField] private GameObject gameCompleteContainer;
     [SerializeField] private TextMeshProUGUI timeText;
     [SerializeField] private TextMeshProUGUI levelCompleteTimeText;
     [SerializeField] private TextMeshProUGUI tasksNotCompleteWarningText;
@@ -184,7 +185,7 @@ public class GameController : MonoBehaviour
     public void StageComplete()
     {
         ManageStageCompleted();
-        levelCompleteContainer.SetActive(true);
+        stageCompleteContainer.SetActive(true);
         StartCoroutine(LoadNextLevel());
     }
 
@@ -202,6 +203,7 @@ public class GameController : MonoBehaviour
     {
         // TODO Implement
         ManageStageCompleted();
+        gameCompleteContainer.SetActive(true);
         Debug.Log("Game Completed!!");
     }
 
