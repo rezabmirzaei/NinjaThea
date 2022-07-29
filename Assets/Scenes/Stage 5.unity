@@ -9188,6 +9188,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1266733416}
     - target: {fileID: 4509868596666571655, guid: a7034bc394b02d9409597efc00b3efb2, type: 3}
+      propertyPath: stageCompleteTimeText
+      value: 
+      objectReference: {fileID: 1266733416}
+    - target: {fileID: 4509868596666571655, guid: a7034bc394b02d9409597efc00b3efb2, type: 3}
       propertyPath: levelCompleteContainer
       value: 
       objectReference: {fileID: 1516768368}

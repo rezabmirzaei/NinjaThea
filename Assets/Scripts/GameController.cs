@@ -21,7 +21,7 @@ public class GameController : MonoBehaviour
     [SerializeField] private GameObject stageCompleteContainer;
     [SerializeField] private GameObject gameCompleteContainer;
     [SerializeField] private TextMeshProUGUI timeText;
-    [SerializeField] private TextMeshProUGUI levelCompleteTimeText;
+    [SerializeField] private TextMeshProUGUI stageCompleteTimeText;
     [SerializeField] private TextMeshProUGUI tasksNotCompleteWarningText;
     [SerializeField] private TextMeshProUGUI bestText;
     [SerializeField] private TextMeshProUGUI stageText;
@@ -215,7 +215,7 @@ public class GameController : MonoBehaviour
         Cursor.visible = true;
         backgroundMusic.gameObject.SetActive(false);
         gamePlaying = false;
-        levelCompleteTimeText.text = "Time: " + completionTime;
+        stageCompleteTimeText.text = "Time: " + completionTime;
     }
 
 }
