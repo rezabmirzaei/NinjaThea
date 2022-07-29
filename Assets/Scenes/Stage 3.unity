@@ -472,9 +472,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 994892526}
     - target: {fileID: 4509868596666571655, guid: a7034bc394b02d9409597efc00b3efb2, type: 3}
+      propertyPath: gameCompleteTimeText
+      value: 
+      objectReference: {fileID: 454393034}
+    - target: {fileID: 4509868596666571655, guid: a7034bc394b02d9409597efc00b3efb2, type: 3}
       propertyPath: loadingNextStageText
       value: 
       objectReference: {fileID: 1320363146}
+    - target: {fileID: 4509868596666571655, guid: a7034bc394b02d9409597efc00b3efb2, type: 3}
+      propertyPath: gameCompleteContainer
+      value: 
+      objectReference: {fileID: 454393035}
     - target: {fileID: 4509868596666571655, guid: a7034bc394b02d9409597efc00b3efb2, type: 3}
       propertyPath: levelCompleteTimeText
       value: 
@@ -1049,6 +1057,22 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4333448724316553085, guid: 2de518a41fe42ce4481f6655c7423a87, type: 3}
   m_PrefabInstance: {fileID: 410537228}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &454393034 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 174446292678743004, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
+  m_PrefabInstance: {fileID: 549472130}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &454393035 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7374653390226982574, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
+  m_PrefabInstance: {fileID: 549472130}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &467133481
 PrefabInstance:

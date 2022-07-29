@@ -22,6 +22,7 @@ public class GameController : MonoBehaviour
     [SerializeField] private GameObject gameCompleteContainer;
     [SerializeField] private TextMeshProUGUI timeText;
     [SerializeField] private TextMeshProUGUI stageCompleteTimeText;
+    [SerializeField] private TextMeshProUGUI gameCompleteTimeText;
     [SerializeField] private TextMeshProUGUI tasksNotCompleteWarningText;
     [SerializeField] private TextMeshProUGUI bestText;
     [SerializeField] private TextMeshProUGUI stageText;
@@ -184,12 +185,30 @@ public class GameController : MonoBehaviour
 
     public void StageComplete()
     {
-        ManageStageCompleted();
-        stageCompleteContainer.SetActive(true);
-        StartCoroutine(LoadNextLevel());
+        ManageStageCompleted(stageCompleteContainer);
+        StartCoroutine(LoadNextStage());
     }
 
-    IEnumerator LoadNextLevel()
+    public void GameComplete()
+    {
+        ManageStageCompleted(gameCompleteContainer);
+        StartCoroutine(EndGame());
+    }
+
+    private void ManageStageCompleted(GameObject completionContainer)
+    {
+        string completionTime = timePlaying.ToString("mm':'ss'.'ff");
+        gamePlaying = false;
+        Cursor.visible = true;
+        backgroundMusic.gameObject.SetActive(false);
+        stageCompleteTimeText.text = "Time: " + completionTime;
+        gameCompleteTimeText.text = "Time: " + completionTime;
+        completionContainer.SetActive(true);
+        LevelData levelData = new LevelData(currentSceneName, completionTime, currentSceneIndex);
+        if (DataPersistenceManager.Instance != null) DataPersistenceManager.Instance.SaveData(levelData);
+    }
+
+    IEnumerator LoadNextStage()
     {
         for (int i = secondsToWaitBeforeLoadNextStage; i >= 0; i--)
         {
@@ -199,23 +218,14 @@ public class GameController : MonoBehaviour
         StageLoader.Instance.LoadNextStage();
     }
 
-    public void GameComplete()
+    IEnumerator EndGame()
     {
-        // TODO Implement
-        ManageStageCompleted();
-        gameCompleteContainer.SetActive(true);
-        Debug.Log("Game Completed!!");
-    }
-
-    private void ManageStageCompleted()
-    {
-        string completionTime = timePlaying.ToString("mm':'ss'.'ff");
-        LevelData levelData = new LevelData(currentSceneName, completionTime, currentSceneIndex);
-        if (DataPersistenceManager.Instance != null) DataPersistenceManager.Instance.SaveData(levelData);
-        Cursor.visible = true;
-        backgroundMusic.gameObject.SetActive(false);
-        gamePlaying = false;
-        stageCompleteTimeText.text = "Time: " + completionTime;
+        for (int i = secondsToWaitBeforeLoadNextStage; i >= 0; i--)
+        {
+            Debug.Log("Ending game in " + i + "...");
+            yield return new WaitForSeconds(1f);
+        }
+        StageLoader.Instance.LoadNextStage();
     }
 
 }
