@@ -21,8 +21,6 @@ public class GameController : MonoBehaviour
     [SerializeField] private GameObject stageCompleteContainer;
     [SerializeField] private GameObject gameCompleteContainer;
     [SerializeField] private TextMeshProUGUI timeText;
-    [SerializeField] private TextMeshProUGUI stageCompleteTimeText;
-    [SerializeField] private TextMeshProUGUI gameCompleteTimeText;
     [SerializeField] private TextMeshProUGUI tasksNotCompleteWarningText;
     [SerializeField] private TextMeshProUGUI bestText;
     [SerializeField] private TextMeshProUGUI stageText;
@@ -168,42 +166,44 @@ public class GameController : MonoBehaviour
     {
         numItemsCollected++;
         itemText.text = $"{itemName}: {numItemsCollected}/{numTotalItems}";
-        CheckTasksCompleted();
+        UpdateTasksCompleted();
     }
 
     public void EnemyKilled()
     {
         numdEnemiesKilled++;
         enemyText.text = $"{enemyName}: {numdEnemiesKilled}/{numTotalEnemies}";
-        CheckTasksCompleted();
+        UpdateTasksCompleted();
     }
 
-    private void CheckTasksCompleted()
+    private void UpdateTasksCompleted()
     {
         tasksCompleted = (numItemsCollected >= numTotalItems) && (numdEnemiesKilled >= numTotalEnemies);
     }
 
     public void StageComplete()
     {
-        ManageStageCompleted(stageCompleteContainer);
+        Transform stageCompleteTimeText = stageCompleteContainer.transform.Find("Stage Complete Time Text");
+        PrepareStageCompletion(stageCompleteTimeText.gameObject.GetComponent<TextMeshProUGUI>());
+        stageCompleteContainer.SetActive(true);
         StartCoroutine(LoadNextStage());
     }
 
     public void GameComplete()
     {
-        ManageStageCompleted(gameCompleteContainer);
+        Transform gameCompleteTimeText = gameCompleteContainer.transform.Find("Game Complete Time Text");
+        PrepareStageCompletion(gameCompleteTimeText.gameObject.GetComponent<TextMeshProUGUI>());
+        gameCompleteContainer.SetActive(true);
         StartCoroutine(EndGame());
     }
 
-    private void ManageStageCompleted(GameObject completionContainer)
+    private void PrepareStageCompletion(TextMeshProUGUI completedTimeText)
     {
-        string completionTime = timePlaying.ToString("mm':'ss'.'ff");
         gamePlaying = false;
+        string completionTime = timePlaying.ToString("mm':'ss'.'ff");
         Cursor.visible = true;
         backgroundMusic.gameObject.SetActive(false);
-        stageCompleteTimeText.text = "Time: " + completionTime;
-        gameCompleteTimeText.text = "Time: " + completionTime;
-        completionContainer.SetActive(true);
+        completedTimeText.text = "Time: " + completionTime;
         LevelData levelData = new LevelData(currentSceneName, completionTime, currentSceneIndex);
         if (DataPersistenceManager.Instance != null) DataPersistenceManager.Instance.SaveData(levelData);
     }
