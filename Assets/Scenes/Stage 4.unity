@@ -8462,6 +8462,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6121260995919504959, guid: bb419845e758cdb4194de9e7626cc70d, type: 3}
   m_PrefabInstance: {fileID: 48434179}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1831872518 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 466140249, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
+  m_PrefabInstance: {fileID: 8256643196118948320}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1874405033
 GameObject:
   m_ObjectHideFlags: 0
@@ -9017,6 +9028,10 @@ PrefabInstance:
       propertyPath: countdownText
       value: 
       objectReference: {fileID: 2108962885}
+    - target: {fileID: 4509868596666571655, guid: a7034bc394b02d9409597efc00b3efb2, type: 3}
+      propertyPath: endingGameText
+      value: 
+      objectReference: {fileID: 1831872518}
     - target: {fileID: 4509868596666571655, guid: a7034bc394b02d9409597efc00b3efb2, type: 3}
       propertyPath: itemsContainer
       value: 

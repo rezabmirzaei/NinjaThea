@@ -25,6 +25,7 @@ public class GameController : MonoBehaviour
     [SerializeField] private TextMeshProUGUI bestText;
     [SerializeField] private TextMeshProUGUI stageText;
     [SerializeField] private TextMeshProUGUI loadingNextStageText;
+    [SerializeField] private TextMeshProUGUI endingGameText;
     [SerializeField] private String customStageText;
 
     [Header("Countdown")]
@@ -78,6 +79,7 @@ public class GameController : MonoBehaviour
         SetBestText();
         countdownText.text = "";
         loadingNextStageText.text = "";
+        endingGameText.text = "";
 
         if (string.IsNullOrEmpty(customStageText))
             stageText.text = SceneManager.GetActiveScene().name;
@@ -222,7 +224,7 @@ public class GameController : MonoBehaviour
     {
         for (int i = secondsToWaitBeforeLoadNextStage; i >= 0; i--)
         {
-            Debug.Log("Ending game in " + i + "...");
+            endingGameText.text = "Ending game in " + i + "...";
             yield return new WaitForSeconds(1f);
         }
         StageLoader.Instance.LoadNextStage();

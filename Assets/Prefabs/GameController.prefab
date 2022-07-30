@@ -55,13 +55,14 @@ MonoBehaviour:
   enemiesContainer: {fileID: 0}
   enemyText: {fileID: 0}
   hudContainer: {fileID: 0}
-  levelCompleteContainer: {fileID: 0}
+  stageCompleteContainer: {fileID: 0}
+  gameCompleteContainer: {fileID: 0}
   timeText: {fileID: 0}
-  levelCompleteTimeText: {fileID: 0}
   tasksNotCompleteWarningText: {fileID: 0}
   bestText: {fileID: 0}
   stageText: {fileID: 0}
   loadingNextStageText: {fileID: 0}
+  endingGameText: {fileID: 0}
   customStageText: 
   countdownText: {fileID: 0}
   countdownSteps:
