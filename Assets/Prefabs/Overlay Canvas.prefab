@@ -131,7 +131,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 2
           m_FloatArgument: 0
-          m_StringArgument: Level 3
+          m_StringArgument: Tutorial
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &271979007
@@ -605,7 +605,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Great job!
+  m_text: GREAT JOB!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b13d6e8af1fef174ca143e272f09c024, type: 2}
   m_sharedMaterial: {fileID: 7759721623890837852, guid: b13d6e8af1fef174ca143e272f09c024, type: 2}
@@ -638,7 +638,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 3
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
