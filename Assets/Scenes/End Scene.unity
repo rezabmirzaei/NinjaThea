@@ -782,7 +782,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "seethingswarm\nArludus\n\rPixel Frog"
+  m_text: "SeethingSwarm\nArludus\n\rPixel Frog"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b13d6e8af1fef174ca143e272f09c024, type: 2}
   m_sharedMaterial: {fileID: 7759721623890837852, guid: b13d6e8af1fef174ca143e272f09c024, type: 2}
@@ -1507,8 +1507,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -120.4, y: -138}
-  m_SizeDelta: {x: 433.81, y: 160.1902}
+  m_AnchoredPosition: {x: -86.75834, y: -138}
+  m_SizeDelta: {x: 501.0933, y: 160.1902}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1230355538
 MonoBehaviour:
@@ -1530,7 +1530,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Thea herself
+  m_text: 'NinjaThea herself
 
     PlayOnLoop.com'
   m_isRightToLeft: 0
@@ -1646,7 +1646,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 639, y: -437}
+  m_AnchoredPosition: {x: 664, y: -451}
   m_SizeDelta: {x: 500, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1282110061
