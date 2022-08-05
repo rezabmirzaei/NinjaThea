@@ -28,19 +28,6 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    // TODO not neccessary atm. Thea doesn't want flying enemies. To hard to kill for her...
-    /* private void FixedUpdate()
-    {
-        if (!dead) return;
-        // Enemy is dead. Disable once on the ground (falling down)
-        while (!isGrounded()) transform.Translate(Vector2.down * 4.0f * Time.deltaTime, Space.World);
-    }
-
-    private bool isGrounded()
-    {
-        return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, terrain);
-    } */
-
     public void Die()
     {
         deathSound.Play();

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4333448724316553074}
   - component: {fileID: 4333448724316553075}
   - component: {fileID: 4333448724316553084}
+  - component: {fileID: 7069135893929398553}
   m_Layer: 8
   m_Name: Strawberry
   m_TagString: Collectible
@@ -26,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4333448724316553072}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.597, y: 0.123, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -122,3 +123,16 @@ CircleCollider2D:
   m_Offset: {x: 0.025512815, y: 0.0107810795}
   serializedVersion: 2
   m_Radius: 0.36426327
+--- !u!114 &7069135893929398553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4333448724316553072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63733a804e1d6584bb0b820a795cf33d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Collected: 0
