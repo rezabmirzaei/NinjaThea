@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!gameObject.GetComponent<PlayerLife>().IsDead())
         {
-            if (GameController.Instance.gamePlaying && !PauseMenu.isPaused)
+            if (GameManager.Instance.gamePlaying && !PauseMenu.isPaused)
             {
                 horizontalMove = Input.GetAxisRaw("Horizontal");
 

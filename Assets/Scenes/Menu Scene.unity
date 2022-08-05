@@ -189,7 +189,7 @@ GameObject:
   - component: {fileID: 8284697}
   - component: {fileID: 8284696}
   m_Layer: 5
-  m_Name: QuitButton
+  m_Name: Quit Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2814,7 +2814,7 @@ GameObject:
   - component: {fileID: 1311986061}
   - component: {fileID: 1311986060}
   m_Layer: 5
-  m_Name: StageSelectButton
+  m_Name: Stage Select Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2972,7 +2972,7 @@ GameObject:
   - component: {fileID: 1329132298}
   - component: {fileID: 1329132297}
   m_Layer: 5
-  m_Name: BackButton
+  m_Name: Back Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3130,7 +3130,7 @@ GameObject:
   - component: {fileID: 1338476646}
   - component: {fileID: 1338476645}
   m_Layer: 5
-  m_Name: PlayGameButton
+  m_Name: Play Game Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3560,7 +3560,7 @@ GameObject:
   - component: {fileID: 1444379678}
   - component: {fileID: 1444379677}
   m_Layer: 5
-  m_Name: PlayButton
+  m_Name: Play Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4088,7 +4088,7 @@ GameObject:
   - component: {fileID: 1614384391}
   - component: {fileID: 1614384390}
   m_Layer: 5
-  m_Name: IntroText
+  m_Name: Intro Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4645,7 +4645,7 @@ GameObject:
   - component: {fileID: 2044895813}
   - component: {fileID: 2044895812}
   m_Layer: 5
-  m_Name: BackButton
+  m_Name: Back Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

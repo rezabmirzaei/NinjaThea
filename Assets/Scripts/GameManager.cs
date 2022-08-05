@@ -4,10 +4,10 @@ using TMPro;
 using System;
 using System.Collections;
 
-public class GameController : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
 
-    public static GameController Instance;
+    public static GameManager Instance;
     public bool tasksCompleted;
     public bool gamePlaying;
 
@@ -136,7 +136,6 @@ public class GameController : MonoBehaviour
     {
         gamePlaying = true;
         startTime = Time.time;
-        // TODO Handle better in AudioManager
         backgroundMusic.gameObject.SetActive(true);
     }
 

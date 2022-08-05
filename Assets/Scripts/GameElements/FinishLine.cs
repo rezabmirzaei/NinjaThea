@@ -12,7 +12,7 @@ public class FinishLine : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
-        if (collision.gameObject.CompareTag("Player") && GameController.Instance.tasksCompleted)
+        if (collision.gameObject.CompareTag("Player") && GameManager.Instance.tasksCompleted)
         {
             if (!isFinished)
             {
@@ -22,14 +22,14 @@ public class FinishLine : MonoBehaviour
                 if (UserStatsHandler.Instance != null && levelCompleteAchievementID != null)
                     UserStatsHandler.Instance.PopAchievement(levelCompleteAchievementID);
 
-                if (!isFinalStage) GameController.Instance.StageComplete();
-                else GameController.Instance.GameComplete();
+                if (!isFinalStage) GameManager.Instance.StageComplete();
+                else GameManager.Instance.GameComplete();
 
             }
         }
         else
         {
-            GameController.Instance.DisplayTasksNotCompleteWarningText();
+            GameManager.Instance.DisplayTasksNotCompleteWarningText();
         }
 
     }

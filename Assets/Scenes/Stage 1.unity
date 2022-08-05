@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 13796350}
   - component: {fileID: 13796351}
   m_Layer: 0
-  m_Name: DontFallDown
+  m_Name: Dont Fall Down
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -429,7 +429,7 @@ GameObject:
   - component: {fileID: 117648616}
   - component: {fileID: 117648615}
   m_Layer: 0
-  m_Name: AvoidTraps
+  m_Name: Avoid Traps
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1196,7 +1196,7 @@ GameObject:
   - component: {fileID: 552324018}
   - component: {fileID: 552324017}
   m_Layer: 0
-  m_Name: CollectFruit
+  m_Name: Collect Fruit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1874,7 +1874,7 @@ GameObject:
   - component: {fileID: 1094507410}
   - component: {fileID: 1094507409}
   m_Layer: 0
-  m_Name: AvoidCritters
+  m_Name: Avoid Critters
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
