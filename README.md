@@ -4,6 +4,8 @@
 
 A simple Unity 2D platformer for my 4 year old daughter. Mischievous critters have stolen all the fruit from the local grocery store and it's up to brave little NinjaThea to get it all back as fast as she can!
 
+Check it out on [Steam!](https://store.steampowered.com/app/2005800/NinjaThea/)
+
 Pixel art courtesy of:
 
 * [SeethingSwarm](https://seethingswarm.itch.io/) - NinjaThea, all critters
