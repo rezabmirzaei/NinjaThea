@@ -2385,17 +2385,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3817943670495130295, guid: 63fd3e5ab71219f4fb79b92d408dfd9d, type: 3}
   m_PrefabInstance: {fileID: 1266222085}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1266733416 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1266733416, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
-  m_PrefabInstance: {fileID: 8256643196118948320}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1354831977
 GameObject:
   m_ObjectHideFlags: 0
@@ -9017,10 +9006,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 236906572}
     - target: {fileID: 4509868596666571655, guid: a7034bc394b02d9409597efc00b3efb2, type: 3}
-      propertyPath: gameCompleteTimeText
-      value: 
-      objectReference: {fileID: 8256643196118948322}
-    - target: {fileID: 4509868596666571655, guid: a7034bc394b02d9409597efc00b3efb2, type: 3}
       propertyPath: loadingNextStageText
       value: 
       objectReference: {fileID: 860494647}
@@ -9028,18 +9013,6 @@ PrefabInstance:
       propertyPath: gameCompleteContainer
       value: 
       objectReference: {fileID: 8256643196118948323}
-    - target: {fileID: 4509868596666571655, guid: a7034bc394b02d9409597efc00b3efb2, type: 3}
-      propertyPath: levelCompleteTimeText
-      value: 
-      objectReference: {fileID: 1266733416}
-    - target: {fileID: 4509868596666571655, guid: a7034bc394b02d9409597efc00b3efb2, type: 3}
-      propertyPath: stageCompleteTimeText
-      value: 
-      objectReference: {fileID: 1266733416}
-    - target: {fileID: 4509868596666571655, guid: a7034bc394b02d9409597efc00b3efb2, type: 3}
-      propertyPath: levelCompleteContainer
-      value: 
-      objectReference: {fileID: 1516768368}
     - target: {fileID: 4509868596666571655, guid: a7034bc394b02d9409597efc00b3efb2, type: 3}
       propertyPath: stageCompleteContainer
       value: 
@@ -9050,7 +9023,7 @@ PrefabInstance:
       objectReference: {fileID: 1728366432}
     - target: {fileID: 4509868596666571657, guid: a7034bc394b02d9409597efc00b3efb2, type: 3}
       propertyPath: m_Name
-      value: Game Controller
+      value: Game Manager
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7034bc394b02d9409597efc00b3efb2, type: 3}
@@ -9401,17 +9374,6 @@ PrefabInstance:
 --- !u!114 &8256643196118948321 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 72466160647036653, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
-  m_PrefabInstance: {fileID: 8256643196118948320}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &8256643196118948322 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 174446292678743004, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
   m_PrefabInstance: {fileID: 8256643196118948320}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
