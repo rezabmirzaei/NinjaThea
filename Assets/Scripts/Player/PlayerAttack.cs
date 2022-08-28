@@ -11,6 +11,7 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private AudioSource attackSound;
     [SerializeField] private LayerMask enemyLayer;
 
+    private bool attack = false;
     private float nextAttackTime = 0f;
 
     private void Update()
@@ -21,10 +22,19 @@ public class PlayerAttack : MonoBehaviour
             {
                 if (Input.GetButtonDown("Attack"))
                 {
-                    Attack();
+                    attack = true;
                     nextAttackTime = Time.time + 1f / attackRate;
                 }
             }
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        if (attack)
+        {
+            Attack();
+            attack = !attack;
         }
     }
 
