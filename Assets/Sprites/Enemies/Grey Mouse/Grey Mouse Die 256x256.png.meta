@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -283,13 +283,13 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Grey Mouse Die 256x256_2: -219149620
-      Grey Mouse Die 256x256_5: 1839469730
+      Grey Mouse Die 256x256_4: 63962654
       Grey Mouse Die 256x256_7: -1413636090
       Grey Mouse Die 256x256_3: -1122426801
       Grey Mouse Die 256x256_0: 1251615011
       Grey Mouse Die 256x256_6: 1929872806
       Grey Mouse Die 256x256_1: 1392419994
-      Grey Mouse Die 256x256_4: 63962654
+      Grey Mouse Die 256x256_5: 1839469730
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
