@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System;
 
-[System.Serializable]
+[Serializable]
 public class GameData
 {
     public List<LevelData> LevelStatus;

@@ -9,6 +9,10 @@ public class PlayerMovement : MonoBehaviour
 
     private float horizontalMove = 0f;
     private bool jump = false;
+    private float coyoteTime = .1f;
+    private float coyoteTimeCounter;
+    private float jumpBufferTime = .1f;
+    private float jumpBufferCounter;
     [SerializeField] private float moveSpeed = 7f;
     [SerializeField] private bool facingRight = true;
     [SerializeField] private float jumpForce = 14f;
@@ -23,16 +27,33 @@ public class PlayerMovement : MonoBehaviour
             if (GameManager.Instance.gamePlaying && !PauseMenu.isPaused)
             {
                 horizontalMove = Input.GetAxisRaw("Horizontal");
-
-                if (Input.GetButtonDown("Jump") && isGrounded())
+                if (isGrounded())
+                {
+                    coyoteTimeCounter = coyoteTime;
+                }
+                else
+                {
+                    coyoteTimeCounter -= Time.deltaTime;
+                }
+                if (Input.GetButtonDown("Jump"))
+                {
+                    jumpBufferCounter = jumpBufferTime;
+                }
+                else
+                {
+                    jumpBufferCounter -= Time.deltaTime;
+                }
+                if (jumpBufferCounter > 0f && coyoteTimeCounter > 0f)
                 {
                     jump = true;
                 }
             }
             else
             {
-                horizontalMove = 0;
+                horizontalMove = 0f;
                 jump = false;
+                coyoteTimeCounter = 0f;
+                jumpBufferCounter = 0f;
             }
 
             UpdateAnimationState();
@@ -48,6 +69,8 @@ public class PlayerMovement : MonoBehaviour
             jumpSound.Play();
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             jump = false;
+            coyoteTimeCounter = 0f;
+            jumpBufferCounter = 0f;
         }
     }
 
