@@ -20,7 +20,7 @@ public class PlayerAttack : MonoBehaviour
         {
             if (Time.time >= nextAttackTime)
             {
-                if (Input.GetButtonDown("Attack"))
+                if (Input.GetButtonDown("Attack") || Input.GetKeyDown(KeyCode.Z))
                 {
                     attack = true;
                     nextAttackTime = Time.time + 1f / attackRate;
