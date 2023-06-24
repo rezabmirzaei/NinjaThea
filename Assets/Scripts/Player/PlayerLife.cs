@@ -27,14 +27,13 @@ public class PlayerLife : MonoBehaviour
 
     private void Die()
     {
-        if (isDead) return;
         isDead = true;
         deathSound.Play();
+        Debug.Log(animator.GetInteger("State"));
         animator.SetTrigger("Death");
-        rb.bodyType = RigidbodyType2D.Static;
-    }
+     }
 
-    private void Restart()
+    public void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }

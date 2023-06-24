@@ -18,46 +18,48 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float jumpForce = 14f;
     [SerializeField] private LayerMask terrain;
 
-    private enum MovementState { idle, running, jumping, falling }
+    private PlayerLife playerLife;
+    private void Start()
+    {
+        playerLife = gameObject.GetComponent<PlayerLife>();
+    }
 
     private void Update()
     {
-        if (!gameObject.GetComponent<PlayerLife>().IsDead())
+        if (playerLife.IsDead())
         {
-            if (GameManager.Instance.gamePlaying && !PauseMenu.isPaused)
+            horizontalMove = 0f;
+            jump = false;
+            coyoteTimeCounter = 0f;
+            jumpBufferCounter = 0f;
+            animator.SetInteger("State", (int)MovementState.idle);
+            return;
+        }
+
+        if (GameManager.Instance.gamePlaying && !PauseMenu.isPaused)
+        {
+            horizontalMove = Input.GetAxisRaw("Horizontal");
+            if (isGrounded())
             {
-                horizontalMove = Input.GetAxisRaw("Horizontal");
-                if (isGrounded())
-                {
-                    coyoteTimeCounter = coyoteTime;
-                }
-                else
-                {
-                    coyoteTimeCounter -= Time.deltaTime;
-                }
-                if (Input.GetButtonDown("Jump"))
-                {
-                    jumpBufferCounter = jumpBufferTime;
-                }
-                else
-                {
-                    jumpBufferCounter -= Time.deltaTime;
-                }
-                if (jumpBufferCounter > 0f && coyoteTimeCounter > 0f)
-                {
-                    jump = true;
-                }
+                coyoteTimeCounter = coyoteTime;
             }
             else
             {
-                horizontalMove = 0f;
-                jump = false;
-                coyoteTimeCounter = 0f;
-                jumpBufferCounter = 0f;
+                coyoteTimeCounter -= Time.deltaTime;
             }
-
+            if (Input.GetButtonDown("Jump"))
+            {
+                jumpBufferCounter = jumpBufferTime;
+            }
+            else
+            {
+                jumpBufferCounter -= Time.deltaTime;
+            }
+            if (jumpBufferCounter > 0f && coyoteTimeCounter > 0f)
+            {
+                jump = true;
+            }
             UpdateAnimationState();
-
         }
     }
 

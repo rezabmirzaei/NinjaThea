@@ -41,15 +41,14 @@ public class PlayerAttack : MonoBehaviour
     private void Attack()
     {
         attackSound.Play();
-
         Vector2 velocity = rb.velocity;
         if (velocity.y > .1f || velocity.y < -.1f) animator.SetTrigger("Attack Jump");
         else animator.SetTrigger("Attack");
+    }
 
-        float range = attackRange;
-        if (velocity.x > 3f || velocity.x < -3f) range = Mathf.Min(attackRange * Mathf.Abs(velocity.x), 1.8f);
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, range, enemyLayer);
-
+    public void CheckEnemyHit()
+    {
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayer);
         foreach (Collider2D enemyColl in hitEnemies)
         {
             Enemy enemy = enemyColl.GetComponent<Enemy>();
