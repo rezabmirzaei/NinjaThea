@@ -29,7 +29,6 @@ public class PlayerLife : MonoBehaviour
     {
         isDead = true;
         deathSound.Play();
-        Debug.Log(animator.GetInteger("State"));
         animator.SetTrigger("Death");
      }
 
