@@ -19,14 +19,17 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask terrain;
 
     private PlayerLife playerLife;
+    private FinishLine finishLine;
+
     private void Start()
     {
         playerLife = gameObject.GetComponent<PlayerLife>();
+        finishLine = FindObjectOfType<FinishLine>();
     }
 
     private void Update()
     {
-        if (playerLife.IsDead())
+        if (playerLife.IsDead() || finishLine.IsFinished())
         {
             horizontalMove = 0f;
             jump = false;

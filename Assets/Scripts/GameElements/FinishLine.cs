@@ -39,4 +39,8 @@ public class FinishLine : MonoBehaviour
         return isFinalStage;
     }
 
+    public bool IsFinished() {
+        return isFinished;
+    }
+
 }
