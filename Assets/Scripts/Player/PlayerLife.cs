@@ -28,9 +28,10 @@ public class PlayerLife : MonoBehaviour
     private void Die()
     {
         isDead = true;
+        ResetAllAnimatorTriggers();
         deathSound.Play();
         animator.SetTrigger("Death");
-     }
+    }
 
     public void Restart()
     {
@@ -40,6 +41,17 @@ public class PlayerLife : MonoBehaviour
     public bool IsDead()
     {
         return isDead;
+    }
+
+    private void ResetAllAnimatorTriggers()
+    {
+        foreach (var trigger in animator.parameters)
+        {
+            if (trigger.type == AnimatorControllerParameterType.Trigger)
+            {
+                animator.ResetTrigger(trigger.name);
+            }
+        }
     }
 
 }
