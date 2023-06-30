@@ -31,7 +31,7 @@ public class PlayerLife : MonoBehaviour
         ResetAllAnimatorTriggers();
         deathSound.Play();
         animator.SetTrigger("Death");
-        rb.isKinematic = true;
+        rb.bodyType = RigidbodyType2D.Static;
     }
 
     public void Restart()
